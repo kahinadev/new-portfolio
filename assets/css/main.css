@@ -456,7 +456,7 @@ h3 {
   height: 100vh;
   z-index: -1;
   transition: transform 0.1s ease-out;
-  background-image: url("../../../../htdocs/new-portfolio/assets/img/me/banner-of-me.webp");
+  background-image: url("../../img/me/banner-of-me.webp");
 }
 
 .project-banner {
