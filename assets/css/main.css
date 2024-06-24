@@ -85,6 +85,12 @@ body p strong,
 body a strong {
   font-weight: 500;
 }
+@media screen and (max-width: 578px) {
+  body p,
+body a {
+    font-size: 20px !important;
+  }
+}
 
 img {
   width: 100%;
@@ -110,7 +116,7 @@ h1 {
 }
 @media screen and (max-width: 578px) {
   h1 {
-    font-size: 70px !important;
+    font-size: 60px !important;
   }
 }
 @media screen and (max-width: 1480px) {
@@ -457,6 +463,11 @@ h3 {
   z-index: -1;
   transition: transform 0.1s ease-out;
   background-image: url("../img/me/banner-of-me.webp");
+}
+@media screen and (max-width: 578px) {
+  .introduction {
+    background-position: right !important;
+  }
 }
 
 .project-banner {
