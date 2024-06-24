@@ -1,0 +1,21 @@
+.list {
+    li {
+        border-top: $border-top;
+        padding: 2rem $zero-rem;
+        transition: all 0.3s ease-in-out !important;
+
+        a {
+            @include list;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            padding: 2rem;
+            background-color: $color-title;
+            a {
+                color: $color-background;
+            }
+        }
+    }
+}

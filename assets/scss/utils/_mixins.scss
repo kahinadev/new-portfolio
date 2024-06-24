@@ -1,0 +1,27 @@
+@mixin all-button {
+    text-transform: $uppercase;
+    font-family: $subtitle;
+}
+
+@mixin text {
+    color: $color-base;
+    font-size: 28px;
+    font-weight: 300;
+    font-family: $base;
+
+    strong {
+        font-weight: 500;
+    }
+}
+
+@mixin list {
+    display: $flex;
+    text-decoration: $none;
+    justify-content: $space-between;
+}
+
+@mixin span {
+    padding: 1rem;
+    border-radius: $radius;
+    font-size: 18px !important;
+}

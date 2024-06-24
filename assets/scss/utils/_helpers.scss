@@ -1,0 +1,89 @@
+// PADDING 
+
+.pa-1 {
+    padding: 1rem;
+
+    @media screen and (max-width: $mobile) {
+        padding: 1rem $zero-rem;
+    }
+}
+
+// RADIUS
+
+.radius {
+    border-radius: $radius;
+}
+
+// FONTS 
+
+.subtitle {
+    font-size: 28px !important;
+    color: $color-subtitle;
+    text-transform: $uppercase;
+    font-family: $subtitle;
+}
+
+// MARGIN 
+
+.marg {
+    margin: 3rem 0;
+}
+
+.marg-top-mobile {
+    margin-top: 2rem;
+}
+
+// BACKGROUND 
+
+.bg-light {
+    background-color: $color-background !important;
+}
+
+.bg-dark {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        color: $color-background !important;
+    }
+
+    background-color: $color-base !important;
+}
+
+// BANNER
+
+.banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+}
+
+// PARALLAX 
+
+.section {
+    min-height: 100vh;
+    perspective: 1px;
+    display: $flex;
+    overflow-x: $hidden;
+    overflow-y: auto;
+    position: $relative;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        content: '';
+        top: $zero;
+        left: $zero;
+        width: $max;
+        height: $max;
+        z-index: -2;
+        background: inherit;
+        position: $absolute;
+        transform: translateZ(-1px) scale(2);
+    }
+}

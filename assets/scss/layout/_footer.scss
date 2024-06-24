@@ -1,0 +1,25 @@
+.footer {
+    padding: $five-rem $zero-rem;
+
+    h4,h5 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    p,
+    a {
+        font-size: 16px;
+    }
+
+    .reseaux {
+        margin-top: $two-rem;
+
+        ul {
+            display: inline-flex;
+
+            li {
+                margin-right: 10px;
+            }
+        }
+    }
+}

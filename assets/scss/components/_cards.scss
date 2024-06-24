@@ -1,0 +1,89 @@
+.card {
+    border: $none;
+    padding: $two-rem;
+    background-color: transparent;
+}
+
+.card-selection {
+    padding: $zero-rem !important;
+
+    img {
+        height: 100vh;
+
+        @media screen and (max-width: $mobile) {
+            height: 53vh !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            height: 60vh;
+        }
+    }
+
+    .infos-project {
+        width: $max;
+        z-index: 3;
+        padding: $zero-rem 2rem $zero-rem $two-rem;
+        margin: 3rem $zero-rem;
+        position: $absolute;
+
+        .infos {
+            display: $flex;
+            justify-content: $space-between;
+
+            @media screen and (max-width: $mobile) {
+                display: none;
+            }
+
+            span {
+                opacity: 0.9;
+                @include span;
+                color: $color-title !important;
+                background-color: $color-background !important;
+            }
+        }
+    }
+
+    .presentation {
+        width: $max;
+        opacity: 0;
+        padding: 0 1rem;
+        position: $relative;
+        margin-top: -18rem;
+        transition: $transition !important;
+
+        @media screen and (max-width: $mobile) {
+            margin-top: -12rem !important;
+        }
+
+
+        @media screen and (max-width: $tablet) {
+            margin-top: -15rem;
+        }
+
+        h3,
+        h4 {
+            @media screen and (max-width: $mobile) {
+                font-size: 45px !important;
+            }
+        }
+
+        h3,
+        h4,
+        p {
+            text-align: center;
+            color: $color-background;
+        }
+
+        p {
+            font-size: 17px !important;
+        }
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        .presentation {
+            opacity: 1;
+        }
+    }
+}

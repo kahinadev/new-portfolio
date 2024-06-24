@@ -1,0 +1,34 @@
+.btn {
+    font-size: 15px;
+    border: $none;
+    border-radius: $radius;
+    padding: 20px 35px;
+    @include all-button;
+    margin-top: 1rem;
+    transition: $transition;
+    background-color: transparent;
+}
+
+.btn-light {
+    color: $color-background !important;
+    border: 1px solid $color-background;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-base !important;
+        background-color: $color-background;
+    }
+}
+
+.btn-accent {
+    color: $color-button !important;
+    border: 1px solid $color-button;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-title !important;
+        background-color: $color-button;
+    }
+}

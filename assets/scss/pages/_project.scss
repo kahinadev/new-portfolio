@@ -1,0 +1,32 @@
+.project-banner {
+    height: 100vh;
+
+    img {
+        width: $max;
+        left: $zero-rem;
+        top: $zero-rem;
+        position: $fixed;
+        z-index: -3;
+        height: 100vh;
+    }
+
+    h1 {
+        margin-top: 10rem;
+        color: $color-background;
+    }
+}
+
+.project-introduction {
+    .services {
+        .service {
+            span {
+                @include span;
+                border: 1px solid $color-subtitle;
+            }
+        }
+    }
+
+    img {
+        margin-top: $five-rem;
+    }
+}

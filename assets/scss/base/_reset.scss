@@ -1,0 +1,30 @@
+* {
+    margin: $zero;
+    padding: $zero;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-background;
+
+    section {
+        padding: 10rem $five-rem;
+
+        @media screen and (max-width: $mobile) {
+            padding: $five-rem 20px !important;
+        }
+    }
+
+    p,
+    a {
+        @include text;
+    }
+}
+
+img {
+    width: $max;
+    border-radius: 15px;
+    object-fit: cover;
+}

@@ -1,0 +1,73 @@
+// FONTS ( TYPOGRAPHIES )
+
+$base: "Comfortaa", sans-serif;
+$subtitle: "Karla", sans-serif;
+$title: "Unica One", sans-serif;
+
+// COLORS ( COULEURS )
+
+$color-base: #292929; 
+$color-title: #233221;
+$color-button: #BACEB6;
+$color-subtitle: #7b9774;
+$color-background: #EBEBEB;
+
+// INITIAL
+
+$zero: 0; 
+
+// SIZE ( TAILLE ) 
+
+$zero-rem: 0rem;
+$two-rem: 2rem;
+$five-rem: 5rem;
+
+// POSITION
+
+$fixed: fixed;
+$absolute: absolute;
+$relative: relative;
+
+// WIDTH 
+
+$max: 100%;
+
+// OVERFLOW 
+
+$hidden: hidden;
+
+// MEDIA QUERIES
+
+$mobile: 578px;
+$small-tablet: 769px;
+$tablet: 1024px;
+$desktop: 1480px;
+
+// TRANSFORM 
+
+$uppercase: uppercase;
+
+// DISPLAY 
+
+$none: none;
+$flex: flex;
+
+// RADIUS
+
+$radius: 20px;
+
+// JUSTIFY CONTENT 
+
+$space-between: space-between;
+
+// BORDER
+
+$border-top: 1px solid $color-base;
+
+// TRANSITION 
+
+$transition: all 0.3s ease-in-out;
+
+// BACKGROUND 
+
+$transparent: transparent;
