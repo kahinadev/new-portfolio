@@ -48,10 +48,20 @@
     h5,
     h6,
     p {
-        color: $color-background !important;
+        color: $color-background;
     }
 
     background-color: $color-base !important;
+}
+
+.bg-green {
+    background-color: $color-subtitle !important;
+}
+
+// COLOR 
+
+.dark {
+    color: $color-base !important;
 }
 
 // BANNER

@@ -1,32 +1,76 @@
-.project-banner {
-    height: 100vh;
+.project-name {
+    padding: $zero $zero 10rem $zero;
 
     img {
-        width: $max;
-        left: $zero-rem;
-        top: $zero-rem;
-        position: $fixed;
-        z-index: -3;
         height: 100vh;
-    }
+        top: $zero;
+        left: $zero;
+        width: $max;
+        position: $absolute;
+        border-top-left-radius: $zero-rem !important;
+        border-top-right-radius: $zero-rem !important;
 
-    h1 {
-        margin-top: 10rem;
-        color: $color-background;
-    }
-}
+        @media screen and (max-width: $mobile) {
+            height: 110vh !important;
+        }
 
-.project-introduction {
-    .services {
-        .service {
-            span {
-                @include span;
-                border: 1px solid $color-subtitle;
-            }
+        @media screen and (max-width: $tablet) {
+            height: 80vh;
         }
     }
 
-    img {
-        margin-top: $five-rem;
+    .name {
+        z-index: 5;
+        margin-top: 15rem;
+        position: $relative;
+    }
+
+    .btn {
+        @media screen and (max-width: $mobile) {
+            margin-bottom: $zero-rem !important;
+        }
+    }
+}
+.project-concept {
+    h2 {
+        margin-top: 10rem;
+    }
+
+    .service,
+    .year {
+        padding: 25px;
+        width: $max;
+        display: $flex;
+        border-radius: $radius;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        color: $color-title;
+        border: 2px solid $color-title;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 20px !important;
+        }
+    }
+
+    .marg {
+        @media screen and (max-width: $mobile) {
+            margin: 1rem $zero-rem !important;
+        }
+    }
+}
+
+.branding {
+    h3 {
+        @media screen and (max-width: $mobile) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    h4 {
+        font-family: $subtitle;
+        text-transform: $uppercase;
+        @media screen and (max-width: $mobile) {
+            font-size: 19px !important;
+        }
     }
 }

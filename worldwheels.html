@@ -20,178 +20,258 @@
 
     <link rel="stylesheet" href="assets/css/main.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header p-2 shadow-sm" id="header" aria-label="Header du site">
-        <nav class="navbar navbar-expand-lg">
+    <header class="header transparent-header p-2" id="header" role="heading" aria-label="Header du site">
+        <nav class="navbar">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand" aria-label="KahinaDev">
+                <a href="index.html" class="navbar-brand">
                     KahinaDev
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-label="Ouvrir le menu" 
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="btn button-menu" id="open-sidenav" onclick="openNav()" aria-label="Ouvrir le menu">
+                    <span class="icon-menu">
+                        <span class="text">Menu</span>
+                        <i class="fa-solid fa-circle"></i>
+                        
+                    </span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html" aria-label="Accueil">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="a-propos.html" aria-label="À propos">À propos</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" role="button" aria-label="Services" data-bs-toggle="dropdown" aria-expanded="false">
-                                Services <i class="fa-solid fa-plus"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="service.html#developpement">Développement web</a></li>
-                                <li><a class="dropdown-item" href="service.html#design">Web design</a></li>
-                                <li><a class="dropdown-item" href="service.html#refonte">Refonte de site</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html" aria-label="Portfolio">Portfolio</a>
-                        </li>
-                    </ul>   
-                    <div class="contact">
-                        <a href="https://mail.google.com/mail/u/0/#inbox" class="btn btn-accent" type="button" aria-label="Me contacter">
-                          Me contacter
-                        </a>
-                    </div>             
-                </div>
-            </div>
-        </nav>
-    </header>
-    
-    <main class="main" id="main" role="main" aria-label="Main du site">
-        <section class="project-banner banner worldhweels" aria-label="Bannière du projet">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h1>WorldWheels</h1>
-                        <a href="#introduction-projet" class="btn btn-accent marg">
-                            Découvrir le projet
-                        </a>
-                        <a href="#introduction-projet" class="btn btn-light marg">
-                            Voir le site
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="project-introduction bg-light" id="introduction-projet">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6">
-                        <h2>Projet</h2>
-                        <h3 class="subtitle"><strong>WorldWheels : Révolutionner Le Transport Global Avec Fiabilité, Rapidité Et Durabilité.</strong></h3>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="services">
-                            <div class="service">
-                                <span class="year subtitle">2024</span>
-                                <span class="service subtitle">Développement</span>
-                                <span class="service subtitle">Design</span>
-                                <span class="service subtitle">Site internet</span>
+                <div id="sidenav" class="sidenav">
+                    <div class="menu-sidebar">
+                        <div class="reg-sidenav">
+                            <button id="close-sidenav" class="btn close" onclick="closeNav()" aria-label="Fermer le menu">
+                                <i class="fa-solid fa-xmark"></i> 
+                                <span class="menu-text">Fermer</span>
+                            </button>
+                            <div class="languages">
+                                <a href="worldwheels.html">Fr</a>
+                                <a href="english/wordwheels.html">En</a>
                             </div>
                         </div>
-                        <p class="marg">
-                            WorldWheels est une agence de transport international réputée, dédiée à transformer le secteur du transport mondial. 
-                            Notre mission est de fournir des solutions logistiques innovantes, sécurisées et respectueuses de l'environnement, 
-                            soigneusement adaptées aux besoins spécifiques de chaque client.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="first-image" aria-label="Première mockup du projet">
-            <div class="container">
-                </div>
-            </div>
-        </section>
-        <section class="project-concept banner worldwheels-two bg-light" aria-label="Concept du projet">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6">
-                        <h3>Concept</h3>
-                        <p class="marg">
-                            WorldWheels est une agence de transport international fondée avec pour mission de simplifier et sécurisé tout types de 
-                            transport / voyage à l'échelle mondiale. En intégrant les technologies de pointe, WorldWheels propose des solutions de 
-                            transport fiables, rapides et écologiques favorisant une chaîne de logistique optimisée et durable.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <main class="main" id="main" role="main" aria-label="Main du site">
-        <section class="introduction" aria-label="Introduction">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-4">
-                        <img src="assets/img/me/pic-of-me-one.webp" alt="">
-                    </div>
-                    <div class="col-lg-6 col-md-8">
-                        <h1 class="aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">Kahina Ouali</h1>
-                        <h2 class="subtitle marg-top-mobile aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">Salut, Hello, Hola, 안녕하세요, سلام</h2>
-                        <p class="marg aos-init aos-animation" data-aos="fade-up" data-aos-delay="500">
-                            Développeuse basée à Paris, FRANCE, spécialisée dans le 
-                            développement <strong>d’applications PHP/Symfony à la recherche d’un 
-                                emploi à distance pour une alternance de 24 mois</strong>. 
-                            <br>    
-                            Ma passion s’étend aux jeux vidéo, au web design et à l’impact des technologies 
-                            sur notre quotidien. 
-                        </p>
-                        <a href="a-propos.html" class="btn btn-accent">
-                            En savoir plus sur moi
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="services-presentation bg-light" aria-label="Présentation des services">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2 class="aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">Mes services</h2>
-                        <h3 class="subtitle marg-top-mobile aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">Ce que je fais</h3>
-                    </div>
-                    <div class="col-md-12">
-                        <ul class="list-unstyled marg list">
-                            <li class="dev aos-init aos-animation" data-aos="fade-in" data-aos-delay="400">    
-                                <a href="services.html#developpement">
-                                    <span class="icon"><i class="fa-solid fa-laptop-code"></i></span>
-                                    <span class="service-name">Développement</span>
-                                    <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                        <ul class="list-unstyled">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link" aria-label="Accueil">
+                                    Accueil
                                 </a>
                             </li>
-                            <li class="design aos-init aos-animation" data-aos="fade-in" data-aos-delay="400">    
-                                <a href="services.html#design">
-                                    <span class="icon"><i class="fa-solid fa-palette"></i></span>
-                                    <span class="service-name">Web design</span>
-                                    <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                            <li class="nav-item">
+                                <a href="a-propos.html" class="nav-link" aria-label="À propos">
+                                    À propos
                                 </a>
                             </li>
-                            <li class="redesign aos-init aos-animation" data-aos="fade-in" data-aos-delay="400">    
-                                <a href="services.html#refonte">
-                                    <span class="icon"><i class="fa-solid fa-wrench"></i></span>
-                                    <span class="service-name">Refonte</span>
-                                    <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
+                            <li class="nav-item">
+                                <a href="services.html" class="nav-link" aria-label="Services">
+                                    Services
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="portfolio.html" class="nav-link" aria-label="Portfolio">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link" aria-label="Contact">
+                                    Contact
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="projects-selection bg-light" aria-label="Sélection des projets">
+        </nav>
+    </header>
+
+    <main class="main" id="main" role="main" aria-label="Main du site">
+        <section class="section bg-dark project-name">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="card card-selection marg aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">
+                        <img src="assets/img/projects/worldwheels/transports.webp" alt="Bannière du projet" aria-label="Bannière du projet">
+                        <div class="name text-center aos-init aos-animation" data-aos="fade-left" data-aos-delay="300">
+                            <h1>wordwheels</h1>
+                            <a href="#concept" class="btn btn-accent marg">
+                                Découvrir le projet
+                            </a>
+                            <a href="https://kahinadev.github.io/world-wheels/" class="btn btn-light marg">
+                                Voir le site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section project-concept bg-light" id="concept">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 col-md-12 text-left">
+                        <h2 class="aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">Services & concept</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="marg">
+                            <span class="year subtitle aos-init aos-animation" data-aos="fade-up" 
+                            data-aos-delay="400">2024</span>
+                            <span class="service subtitle aos-init aos-animation" data-aos="fade-up" 
+                            data-aos-delay="400">Développement</span>
+                            <span class="service subtitle aos-init aos-animation" data-aos="fade-up" 
+                            data-aos-delay="400">Design</span>
+                            <span class="service subtitle aos-init aos-animation" data-aos="fade-up" 
+                            data-aos-delay="400">Transport international</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="marg pa-1 aos-init aos-animation" data-aos="fade-up" data-aos-delay="500">
+                            <span class="subtitle"><strong>Révolutionner le transport global avec fiabilité, rapidité et durabilité</strong></span>
+                            <br>
+                            <br>
+                            WorldWheels est une agence de transport international fondée avec pour mission de simplifier et sécurisé tout types de 
+                            transport / voyage à l'échelle mondiale. 
+                            En intégrant les technologies de pointe, WorldWheels propose des solutions de 
+                            transport fiables, rapides et écologiques favorisant une chaîne de logistique optimisée et durable.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section branding bg-dark">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 col-md-6">
+                        <h3 class="aos-init aos-animation" data-aos="fade-down" data-aos-delay="300">Couleurs</h3>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="card card-branding aos-init aos-animation" data-aos="fade-down" data-aos-delay="400" style="background-color: #0F2447;">
+                            <h4 type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Couleur n°1</h4>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-5" id="exampleModalLabel">Bleu profond</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            Symbolise la stabilité et la fiabilité de la présence mondiale, reflétant la 
+                                            capacité à naviguer avec succès à travers les défis du marché mondial. 
+                                        </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-branding aos-init aos-animation" data-aos="fade-down" data-aos-delay="400" style="background-color: #4984A7;">
+                            <h4 type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">Couleur n°2</h4>
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-5" id="exampleModalLabel">Bleu clair</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            Évoque la confiance et la transparence qu'on offre aux clients, assurant des 
+                                            partenariats solides et durables basés sur la communication ouverte. 
+                                        </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-branding aos-init aos-animation" data-aos="fade-down" data-aos-delay="400" style="background-color: #b7ccf0;">
+                            <h4 class="dark" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">Couleur n°3</h4>
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-5" id="exampleModalLabel">Bleu pastel</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            Symbolise l'harmonie et la collaboration qui évoque les relations avec les clients, 
+                                            partenaires et l'équipe, créant un environnement propice à l'innovation et à la 
+                                            croissance.  
+                                        </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-branding aos-init aos-animation" data-aos="fade-down" data-aos-delay="400" style="background-color: #c0c0c0;">
+                            <h4 class="dark" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">Couleur n°4</h4>
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-5" id="exampleModalLabel">Gris clair</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            Incarne l'engagement envers l'efficacité et la précision dans toutes les opérations, 
+                                            soulignant le dévouement à fournir un service de qualité supérieure. 
+                                        </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-branding aos-init aos-animation" data-aos="fade-down" data-aos-delay="400" style="background-color: #e7e4e4;">
+                            <h4 class="dark" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4">Couleur n°5</h4>
+                            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-5" id="exampleModalLabel">Gris argenté</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            Représente l'innovation et la modernité qui animent les solutions logistiques, 
+                                            garantissant la pointe de l'industrie. 
+                                        </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/img/projects/worldwheels/branding/branding.webp" class="marg-top-mobile aos-init aos-animation" 
+                        data-aos="fade-down" data-aos-delay="500" alt="Image du branding du projet">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section images bg-light">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="marg">
+                            <img src="assets/img/projects/worldwheels/mockup/mockup-multiple.webp" class="aos-init aos-animation" 
+                            data-aos="zoom-in" data-aos-delay="300" alt="Mockup du projet sur plusieurs supports" aria-label="Mockup du projet sur plusieurs supports">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section other-images bg-dark">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/img/projects/worldwheels/mockup/mockup-laptop.webp" class="aos-init aos-animation" data-aos="fade-up" 
+                        data-aos-delay="300" alt="Mockup du projet sur ordinateur portable" aria-label="Mockup du projet sur ordinateur portable">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/img/projects/worldwheels/mockup/mockup-tablet.webp" class="aos-init aos-animation" data-aos="fade-up" 
+                        data-aos-delay="300" alt="Mockup du projet sur tablet" aria-label="Mockup du projet sur tablet">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="other bg-light">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3 class="aos-init aos-animation" data-aos="zoom-in" data-aos-delay="300">Autres projets</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card card-selection marg marg-top-mobile aos-init aos-animation" data-aos="zoom-in" data-aos-delay="400">
                             <a href="kanirgarden.html" class="text-decoration-none" alt="Lien de la page du projet KanirGarden" aria-label="Lien de la page du projet KanirGarden">
                                 <div class="infos-project">
                                     <div class="infos">
@@ -208,81 +288,10 @@
                                 <div class="presentation">
                                     <h3>KanirGarden</h3>
                                     <p>
-                                        KanirGarden est un projet dédié au bien-être et à la relaxation, offrant une expérience ultime à travers des services de spa haut de gamme. 
+                                        KanirGarden est un spa et centre de bien-être, qui offre une expérience ultime à travers des services de spa haut de gamme. 
                                     </p>
                                 </div>
                             </a>
-                        </div>
-                        <div class="card card-selection marg aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">
-                            <a href="worldwheels.html" class="text-decoration-none" alt="Lien de la page du projet WorldWheels" aria-label="Lien de la page du projet WorldWheels">
-                                <div class="infos-project">
-                                    <div class="infos">
-                                        <div class="services">
-                                            <span class="service subtitle">Développement</span>
-                                            <span class="service subtitle">Design</span>
-                                        </div>
-                                        <div class="year">
-                                            <span class="year subtitle">2024</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <img src="assets/img/projects/worldwheels/worldwheels.webp" alt="Image de présentation du projet WorldWheels" aria-label="Image de présentation du projet WorldWheels">
-                                <div class="presentation">
-                                    <h3>WorldWheels</h3>
-                                    <p>
-                                        WorldWheels est une agence de transport international réputée, dédiée à transformer le secteur du transport mondial. 
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12 text-center aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">
-                        <a href="portfolio.html" class="btn btn-accent">
-                            Voir tous les projets
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="contact bg-light" aria-label="Contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h3 class="aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">Parlons ensemble</h3>
-                        <h4 class="subtitle aos-init aos-animation" data-aos="fade-in" data-aos-delay="300">Discutons de vos futurs projets</h4>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="list marg">
-                            <ul class="list-one list-unstyled">
-                                <li class="aos-init aos-animation" data-aos="fade-in" data-aos-delay="400">    
-                                    <a href="https://mail.google.com/mail/u/0/#inbox" aria-label="E-mail">
-                                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                                        <span class="service-name">E-mail</span>
-                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
-                                    </a>
-                                </li>
-                                <li class="aos-init aos-animation" data-aos="fade-in" data-aos-delay="400">    
-                                    <a href="https://www.linkedin.com/in/kahinaouali/" aria-label="Linkedin">
-                                        <span class="icon"><i class="fa-brands fa-linkedin-in"></i></span>
-                                        <span class="service-name">LinkedIn</span>
-                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
-                                    </a>
-                                </li>
-                                <li class="aos-init aos-animation" data-aos="fade-in" data-aos-delay="400">    
-                                    <a href="https://github.com/kahinadev" aria-label="Github">
-                                        <span class="icon"><i class="fa-brands fa-github"></i></span>
-                                        <span class="service-name">Github</span>
-                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
-                                    </a>
-                                </li>
-                                <li class="aos-init aos-animation" data-aos="fade-in" data-aos-delay="400">    
-                                    <a href="https://codepen.io/kahinadev" aria-label="Codepen">
-                                        <span class="icon"><i class="fa-brands fa-codepen"></i></span>
-                                        <span class="service-name">Codepen</span>
-                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -329,7 +338,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-12 col-md-12 text-center">
+                <div class="col-lg-12 col-md-12">
                     <div class="reseaux">
                         <ul class="list-unstyled">
                             <li>
@@ -369,5 +378,14 @@
     <script src="https://kit.fontawesome.com/93f593ecee.js" 
     crossorigin="anonymous"></script>
     <script src="assets/js/website.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+        });
+    </script>
 </body>
 </html>

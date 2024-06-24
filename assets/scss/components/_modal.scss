@@ -1,0 +1,20 @@
+.modal {
+    .modal-content {
+        padding: 2rem;
+
+        .modal-header {
+            border-bottom: $none;
+
+            h5 {
+                font-size: 28px !important;
+            }
+        }
+
+        .modal-body {
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+}

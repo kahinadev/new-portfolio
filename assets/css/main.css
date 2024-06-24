@@ -40,7 +40,15 @@
 .bg-dark h5,
 .bg-dark h6,
 .bg-dark p {
-  color: #EBEBEB !important;
+  color: #EBEBEB;
+}
+
+.bg-green {
+  background-color: #7b9774 !important;
+}
+
+.dark {
+  color: #292929 !important;
 }
 
 .banner {
@@ -116,7 +124,7 @@ h1 {
 }
 @media screen and (max-width: 578px) {
   h1 {
-    font-size: 60px !important;
+    font-size: 56px !important;
   }
 }
 @media screen and (max-width: 1480px) {
@@ -130,7 +138,7 @@ h2 {
 }
 @media screen and (max-width: 578px) {
   h2 {
-    font-size: 65px !important;
+    font-size: 55px !important;
   }
 }
 @media screen and (max-width: 1480px) {
@@ -144,7 +152,7 @@ h3 {
 }
 @media screen and (max-width: 578px) {
   h3 {
-    font-size: 60px !important;
+    font-size: 54px !important;
   }
 }
 @media screen and (max-width: 1480px) {
@@ -325,13 +333,17 @@ h3 {
 .footer {
   padding: 5rem 0rem;
 }
-.footer h4, .footer h5 {
+.footer .marg {
+  margin: 1rem 0rem !important;
+}
+.footer h4,
+.footer h5 {
   font-size: 18px;
   font-weight: 600;
 }
 .footer p,
 .footer a {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 .footer .reseaux {
   margin-top: 2rem;
@@ -489,6 +501,25 @@ h3 {
   opacity: 1;
 }
 
+.card-branding {
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.modal .modal-content {
+  padding: 2rem;
+}
+.modal .modal-content .modal-header {
+  border-bottom: none;
+}
+.modal .modal-content .modal-header h5 {
+  font-size: 28px !important;
+}
+.modal .modal-content .modal-body p {
+  font-size: 18px;
+}
+
 .introduction {
   height: 100vh;
   z-index: -1;
@@ -525,30 +556,78 @@ h3 {
   }
 }
 
-.project-banner {
-  height: 100vh;
+.project-name {
+  padding: 0 0 10rem 0;
 }
-.project-banner img {
+.project-name img {
+  height: 100vh;
+  top: 0;
+  left: 0;
   width: 100%;
-  left: 0rem;
-  top: 0rem;
-  position: fixed;
-  z-index: -3;
-  height: 100vh;
+  position: absolute;
+  border-top-left-radius: 0rem !important;
+  border-top-right-radius: 0rem !important;
 }
-.project-banner h1 {
-  margin-top: 10rem;
-  color: #EBEBEB;
+@media screen and (max-width: 578px) {
+  .project-name img {
+    height: 110vh !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .project-name img {
+    height: 80vh;
+  }
+}
+.project-name .name {
+  z-index: 5;
+  margin-top: 15rem;
+  position: relative;
+}
+@media screen and (max-width: 578px) {
+  .project-name .btn {
+    margin-bottom: 0rem !important;
+  }
 }
 
-.project-introduction .services .service span {
-  padding: 1rem;
-  border-radius: 20px;
-  font-size: 18px !important;
-  border: 1px solid #7b9774;
+.project-concept h2 {
+  margin-top: 10rem;
 }
-.project-introduction img {
-  margin-top: 5rem;
+.project-concept .service,
+.project-concept .year {
+  padding: 25px;
+  width: 100%;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  color: #233221;
+  border: 2px solid #233221;
+}
+@media screen and (max-width: 578px) {
+  .project-concept .service,
+.project-concept .year {
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 578px) {
+  .project-concept .marg {
+    margin: 1rem 0rem !important;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .branding h3 {
+    margin-bottom: 2rem;
+  }
+}
+.branding h4 {
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 578px) {
+  .branding h4 {
+    font-size: 19px !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

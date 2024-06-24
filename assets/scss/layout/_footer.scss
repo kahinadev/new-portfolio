@@ -1,14 +1,19 @@
 .footer {
     padding: $five-rem $zero-rem;
 
-    h4,h5 {
+    .marg {
+        margin: 1rem $zero-rem !important;
+    }
+
+    h4,
+    h5 {
         font-size: 18px;
         font-weight: 600;
     }
 
     p,
     a {
-        font-size: 16px;
+        font-size: 16px !important;
     }
 
     .reseaux {
