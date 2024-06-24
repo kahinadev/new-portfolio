@@ -173,11 +173,24 @@ h3 {
   padding: 0 !important;
   transition: transform 0.5s ease !important;
 }
+@media screen and (max-width: 578px) {
+  .header .button-menu {
+    top: 1rem;
+    right: 1rem;
+    position: absolute;
+    margin-top: 0rem !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header .button-menu {
+    margin-top: -2px;
+  }
+}
 .header .button-menu .icon-menu {
   display: flex;
 }
 .header .button-menu .icon-menu i {
-  font-size: 28px;
+  font-size: 18px;
   color: #EBEBEB;
 }
 .header .button-menu .icon-menu .text {
@@ -265,6 +278,9 @@ h3 {
   padding: 0 !important;
   background-color: transparent;
 }
+.sidenav .reg-sidenav .languages {
+  margin-top: auto;
+}
 .sidenav .reg-sidenav .languages a {
   text-decoration: none;
   font-family: "Karla", sans-serif;
@@ -280,7 +296,7 @@ h3 {
   }
 }
 .sidenav ul .nav-link {
-  font-size: 80px;
+  font-size: 80px !important;
   color: #292929;
   position: relative;
   font-family: "Unica One", sans-serif;
@@ -328,7 +344,7 @@ h3 {
 }
 
 .btn {
-  font-size: 15px;
+  font-size: 15px !important;
   border: none;
   border-radius: 20px;
   padding: 20px 35px;
@@ -383,13 +399,24 @@ h3 {
 
 .card-selection {
   padding: 0rem !important;
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 578px) {
+  .card-selection {
+    margin-bottom: 4rem !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .card-selection {
+    margin-bottom: 6rem;
+  }
 }
 .card-selection img {
   height: 100vh;
 }
 @media screen and (max-width: 578px) {
   .card-selection img {
-    height: 53vh !important;
+    height: 63vh !important;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -426,18 +453,22 @@ h3 {
   opacity: 0;
   padding: 0 1rem;
   position: relative;
-  margin-top: -18rem;
+  margin-top: -10rem;
   transition: all 0.3s ease-in-out !important;
 }
 @media screen and (max-width: 578px) {
   .card-selection .presentation {
-    margin-top: -12rem !important;
+    margin-top: -13rem !important;
   }
 }
 @media screen and (max-width: 1024px) {
   .card-selection .presentation {
     margin-top: -15rem;
   }
+}
+.card-selection .presentation h3,
+.card-selection .presentation h4 {
+  font-size: 80px;
 }
 @media screen and (max-width: 578px) {
   .card-selection .presentation h3,
@@ -485,6 +516,12 @@ h3 {
     display: block !important;
     position: absolute !important;
     border-radius: 0rem !important;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .projects-selection .btn {
+    width: 100% !important;
   }
 }
 

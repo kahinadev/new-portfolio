@@ -19,11 +19,22 @@
         padding: $zero !important;
         transition: transform 0.5s ease !important;
 
+        @media screen and (max-width: $mobile) {
+            top: 1rem;
+            right: 1rem;
+            position: $absolute;
+            margin-top: $zero-rem !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            margin-top: -2px;
+        }
+
         .icon-menu {
             display: $flex;
 
             i {
-                font-size: 28px;
+                font-size: 18px;
                 color: $color-background;
             }
 
@@ -141,6 +152,8 @@
         }
 
         .languages {
+            margin-top: auto;
+
             a {
                 text-decoration: $none;
                 font-family: $subtitle;
@@ -158,7 +171,7 @@
         }
 
         .nav-link {
-            font-size: 80px;
+            font-size: 80px !important;
             color: $color-base;
             position: $relative;
             font-family: $title;

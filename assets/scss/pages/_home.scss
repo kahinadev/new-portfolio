@@ -25,3 +25,11 @@
         }
     }
 }
+
+.projects-selection {
+    .btn {
+        @media screen and (max-width: $mobile) {
+            width: $max !important;
+        }
+    }
+}
