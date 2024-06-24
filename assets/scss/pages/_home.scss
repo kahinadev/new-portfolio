@@ -3,8 +3,25 @@
     z-index: -1;
     transition: transform 0.1s ease-out;
     background-image: url("../img/me/banner-of-me.webp");
+    
+    @media screen and (max-width: $tablet) {
+        padding: $zero-rem !important;
+    }
 
-    @media screen and (max-width: $mobile) {
-        background-position: right !important;
+    @media screen and (max-width: $tablet) {
+        background-image: $none !important;
+    }
+
+    img {
+        display: $none;
+
+        @media screen and (max-width: $tablet) {
+            height: 100vh;
+            left: $zero;
+            right: $zero;
+            display: $block !important;
+            position: $absolute !important;
+            border-radius: $zero-rem !important;
+        }
     }
 }

@@ -64,7 +64,7 @@
 }
 
 body {
-  background-color: #EBEBEB;
+  background-color: #292929;
 }
 body section {
   padding: 10rem 5rem;
@@ -464,9 +464,27 @@ h3 {
   transition: transform 0.1s ease-out;
   background-image: url("../img/me/banner-of-me.webp");
 }
-@media screen and (max-width: 578px) {
+@media screen and (max-width: 1024px) {
   .introduction {
-    background-position: right !important;
+    padding: 0rem !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .introduction {
+    background-image: none !important;
+  }
+}
+.introduction img {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .introduction img {
+    height: 100vh;
+    left: 0;
+    right: 0;
+    display: block !important;
+    position: absolute !important;
+    border-radius: 0rem !important;
   }
 }
 
