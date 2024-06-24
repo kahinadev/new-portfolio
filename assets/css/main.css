@@ -50,26 +50,9 @@
   background-position: top center;
 }
 
-.section {
-  min-height: 100vh;
-  perspective: 1px;
-  display: flex;
-  overflow-x: hidden;
-  overflow-y: auto;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-}
-.section::before {
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
+.panel {
   height: 100%;
-  z-index: -2;
-  background: inherit;
-  position: absolute;
-  transform: translateZ(-1px) scale(2);
+  width: 100%;
 }
 
 * {
@@ -473,7 +456,7 @@ h3 {
   height: 100vh;
   z-index: -1;
   transition: transform 0.1s ease-out;
-  background-image: url("../../../assets/img/me/banner-of-me.webp");
+  background-image: url("../../../../htdocs/new-portfolio/assets/img/me/banner-of-me.webp");
 }
 
 .project-banner {

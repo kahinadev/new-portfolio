@@ -65,25 +65,7 @@
 
 // PARALLAX 
 
-.section {
-    min-height: 100vh;
-    perspective: 1px;
-    display: $flex;
-    overflow-x: $hidden;
-    overflow-y: auto;
-    position: $relative;
-    align-items: center;
-    justify-content: center;
-
-    &::before {
-        content: '';
-        top: $zero;
-        left: $zero;
-        width: $max;
-        height: $max;
-        z-index: -2;
-        background: inherit;
-        position: $absolute;
-        transform: translateZ(-1px) scale(2);
-    }
+.panel {
+    height: $max;
+    width: $max;
 }
