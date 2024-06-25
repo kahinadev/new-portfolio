@@ -56,7 +56,7 @@ document.addEventListener("scroll", function () {
             header.classList.remove("light-header");
             header.classList.remove("transparent-header");
 
-        } 
+        }
     }
 
 

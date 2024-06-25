@@ -8,44 +8,25 @@
     background-color: transparent !important;
     transition: background-color 0.3s, color 0.3s;
 
-    .navbar-brand {
-        font-size: 22px;
-        font-weight: 600;
-        color: $color-background !important;
-        font-family: $title;
+    .navbar {
+        display: $flex;
+        justify-content: $space-between;
+
+        img {
+            width: 15%;
+        }
     }
 
     .button-menu {
+        color: $color-subtitle;
+        margin-top: 0px;
         padding: $zero !important;
         transition: transform 0.5s ease !important;
 
         @media screen and (max-width: $mobile) {
-            top: 1rem;
-            right: 1rem;
+            right: 1.8rem;
             position: $absolute;
-            margin-top: $zero-rem !important;
         }
-
-        @media screen and (max-width: $tablet) {
-            margin-top: -2px;
-        }
-
-        .icon-menu {
-            display: $flex;
-
-            i {
-                font-size: 18px;
-                color: $color-background;
-            }
-
-            .text {
-                margin-top: auto;
-                margin-left: 5%;
-                opacity: 0;
-                color: $color-background;
-            }
-        }
-
 
         &:hover,
         &:focus,
@@ -53,153 +34,197 @@
             transform: scale(1.1);
 
             .icon-menu {
-                border-bottom: 1px solid $color-background;
+                border-bottom: 2px solid $color-subtitle;
                 border-bottom-left-radius: 0px !important;
                 border-bottom-right-radius: 50px !important;
 
                 i {
                     color: $color-background;
-                    margin-left: 5%;
-                }
-
-                .text {
-                    opacity: 1;
-                    color: $color-background;
                 }
             }
-        }
-    }
-
-    .open {
-        width: 100%;
-    }
-}
-
-.transparent-header {
-    background-color: $transparent !important;
-}
-
-.dark-header {
-
-    .navbar-brand {
-        color: $color-background !important;
-    }
-
-    .sidenav {
-        background-color: $color-base !important;
-
-        a,
-        .close {
-            color: $color-background !important;
-        }
-    }
-}
-
-.light-header {
-
-    .navbar-brand,
-    i,
-    .text {
-        color: $color-base !important;
-    }
-
-    .button-menu {
-        border-radius: 0px;
-
-        &:hover,
-        &:focus,
-        &:active {
-            .icon-menu {
-                border-bottom: 1px solid $color-base;
+            .text {
+                color: $color-background;
             }
         }
+
+        i {
+            font-size: 20px;
+        }
+
+        .text {
+            color: $color-background;
+            font-family: $title;
+            font-weight: 800;
+            letter-spacing: 0.9px;
+        }
     }
 }
-
 
 .sidenav {
-    top: 0;
-    right: 0;
-    width: 0;
-    z-index: 3;
-    height: 100%;
-    position: $fixed;
-    overflow-x: $hidden;
-    transition: width 0.3s ease;
-    background-color: $color-background;
-
-    .menu-sidebar {
-        padding: 5rem;
-
-        @media screen and (max-width: $mobile) {
-            padding: 2rem;
-        }
-    }
-
-    .reg-sidenav {
-        display: $flex;
-        justify-content: $space-between;
-
-        a,
-        .close {
-            font-size: 17px !important;
-        }
-
-        .close {
-            color: $color-base;
-            padding: $zero !important;
-            background-color: $transparent;
-        }
-
-        .languages {
-            margin-top: auto;
-
-            a {
-                text-decoration: $none;
-                font-family: $subtitle;
-                text-transform: $uppercase;
-            }
-        }
-    }
-
-    ul {
-        margin-top: 5rem;
-        text-align: center;
-
-        @media screen and (max-width: $mobile) {
-            margin-top: 2rem;
-        }
-
-        .nav-link {
-            font-size: 80px !important;
-            color: $color-base;
-            position: $relative;
-            font-family: $title;
-            transition: color 0.3s ease-in-out;
-
-            &::before {
-                right: 30%;
-                bottom: 0;
-                height: 2px;
-                content: '';
-                width: 0;
-                position: $absolute;
-                visibility: $hidden;
-                transform: translateX(-50%);
-                background-color: $color-subtitle !important;
-                transition: all 0.3s ease-in-out;
-            }
-
-            &:hover,
-            &:focus,
-            &:active {
-                color: $color-subtitle !important;
-
-                &:before {
-                    visibility: visible;
-                    width: 50%;
-                }
-            }
-        }
-    }
+    display: none;
 }
+
+// .header {
+
+
+
+
+//         @media screen and (max-width: $mobile) {
+//             top: 1rem;
+//             right: 1rem;
+//             position: $absolute;
+//             margin-top: $zero-rem !important;
+//         }
+
+//         @media screen and (max-width: $tablet) {
+//             margin-top: -2px;
+//         }
+
+//         .icon-menu {
+//             display: $flex;
+
+//             i {
+//                 font-size: 22px;
+//                 color: $color-subtitle;
+//             }
+
+
+//         }
+
+
+
+//     }
+
+//     .open {
+//         width: 100%;
+//     }
+// }
+
+// .transparent-header {
+//     background-color: $transparent !important;
+// }
+
+// .dark-header {
+
+//     .navbar-brand {
+//         color: $color-background !important;
+//     }
+
+//     .sidenav {
+//         background-color: $color-base !important;
+
+//         a,
+//         .close {
+//             color: $color-background !important;
+//         }
+//     }
+// }
+
+// .light-header {
+
+//     .navbar-brand,
+//     i,
+//     .text {
+//         color: $color-base !important;
+//     }
+
+//     .button-menu {
+//         border-radius: 0px;
+
+//         &:hover,
+//         &:focus,
+//         &:active {
+//             .icon-menu {
+//                 border-bottom: 1px solid $color-base;
+//             }
+//         }
+//     }
+// }
+
+
+// .sidenav {
+//     top: 0;
+//     right: 0;
+//     width: 0;
+//     z-index: 3;
+//     height: 100%;
+//     position: $fixed;
+//     overflow-x: $hidden;
+//     transition: width 0.3s ease;
+//     background-color: $color-background;
+
+//     .menu-sidebar {
+//         padding: 2rem 5rem;
+
+//         @media screen and (max-width: $mobile) {
+//             padding: 2rem;
+//         }
+//     }
+
+//     .reg-sidenav {
+//         display: $flex;
+//         justify-content: $space-between;
+
+//         a,
+//         .close {
+//             font-size: 17px !important;
+//         }
+
+//         .close {
+//             color: $color-base;
+//             padding: $zero !important;
+//             background-color: $transparent;
+//         }
+
+//         .languages {
+//             margin-top: auto;
+
+//             a {
+//                 text-decoration: $none;
+//                 font-family: $subtitle;
+//                 text-transform: $uppercase;
+//             }
+//         }
+//     }
+
+//     ul {
+//         margin-top: 5rem;
+//         text-align: center;
+
+//         @media screen and (max-width: $mobile) {
+//             margin-top: 2rem;
+//         }
+
+//         .nav-link {
+//             font-size: 80px !important;
+//             color: $color-base;
+//             position: $relative;
+//             font-family: $title;
+//             transition: color 0.3s ease-in-out;
+
+//             &::before {
+//                 right: 30%;
+//                 bottom: 0;
+//                 height: 2px;
+//                 content: '';
+//                 width: 0;
+//                 position: $absolute;
+//                 visibility: $hidden;
+//                 transform: translateX(-50%);
+//                 background-color: $color-subtitle !important;
+//                 transition: all 0.3s ease-in-out;
+//             }
+
+//             &:hover,
+//             &:focus,
+//             &:active {
+//                 color: $color-subtitle !important;
+
+//                 &:before {
+//                     visibility: visible;
+//                     width: 50%;
+//                 }
+//             }
+//         }
+//     }
+// }
