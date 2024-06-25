@@ -3,7 +3,7 @@
     z-index: -1;
     transition: transform 0.1s ease-out;
     background-image: url("../img/banner/banner-hijab.webp");
-    
+
     @media screen and (max-width: $tablet) {
         padding: $zero-rem !important;
     }
@@ -24,12 +24,23 @@
             border-radius: $zero-rem !important;
         }
     }
-}
 
-.projects-selection {
-    .btn {
+    .a-explore {
+        margin-top: 40rem;
+        position: $relative;
+
         @media screen and (max-width: $mobile) {
-            width: $max !important;
+            margin-top: 30rem !important;
+        }
+
+        a {
+            color: $color-background;
+            font-family: $title;
+            position: $relative;
+
+            i {
+                color: $color-subtitle;
+            }
         }
     }
 }

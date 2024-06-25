@@ -60,46 +60,6 @@
     }
 }
 
-.sidenav {
-    display: none;
-}
-
-// .header {
-
-
-
-
-//         @media screen and (max-width: $mobile) {
-//             top: 1rem;
-//             right: 1rem;
-//             position: $absolute;
-//             margin-top: $zero-rem !important;
-//         }
-
-//         @media screen and (max-width: $tablet) {
-//             margin-top: -2px;
-//         }
-
-//         .icon-menu {
-//             display: $flex;
-
-//             i {
-//                 font-size: 22px;
-//                 color: $color-subtitle;
-//             }
-
-
-//         }
-
-
-
-//     }
-
-//     .open {
-//         width: 100%;
-//     }
-// }
-
 // .transparent-header {
 //     background-color: $transparent !important;
 // }
@@ -142,89 +102,89 @@
 // }
 
 
-// .sidenav {
-//     top: 0;
-//     right: 0;
-//     width: 0;
-//     z-index: 3;
-//     height: 100%;
-//     position: $fixed;
-//     overflow-x: $hidden;
-//     transition: width 0.3s ease;
-//     background-color: $color-background;
+.sidenav {
+    top: 0;
+    right: 0;
+    width: 0;
+    z-index: 3;
+    height: 100%;
+    position: $fixed;
+    overflow-x: $hidden;
+    transition: width 0.3s ease;
+    background-color: $color-background;
 
-//     .menu-sidebar {
-//         padding: 2rem 5rem;
+    .menu-sidebar {
+        padding: 2rem 5rem;
 
-//         @media screen and (max-width: $mobile) {
-//             padding: 2rem;
-//         }
-//     }
+        @media screen and (max-width: $mobile) {
+            padding: 2rem;
+        }
+    }
 
-//     .reg-sidenav {
-//         display: $flex;
-//         justify-content: $space-between;
+    .reg-sidenav {
+        display: $flex;
+        justify-content: $space-between;
 
-//         a,
-//         .close {
-//             font-size: 17px !important;
-//         }
+        a,
+        .close {
+            font-size: 17px !important;
+        }
 
-//         .close {
-//             color: $color-base;
-//             padding: $zero !important;
-//             background-color: $transparent;
-//         }
+        .close {
+            color: $color-base;
+            padding: $zero !important;
+            background-color: $transparent;
+        }
 
-//         .languages {
-//             margin-top: auto;
+        .languages {
+            margin-top: auto;
 
-//             a {
-//                 text-decoration: $none;
-//                 font-family: $subtitle;
-//                 text-transform: $uppercase;
-//             }
-//         }
-//     }
+            a {
+                text-decoration: $none;
+                font-family: $subtitle;
+                text-transform: $uppercase;
+            }
+        }
+    }
 
-//     ul {
-//         margin-top: 5rem;
-//         text-align: center;
+    ul {
+        margin-top: 5rem;
+        text-align: center;
 
-//         @media screen and (max-width: $mobile) {
-//             margin-top: 2rem;
-//         }
+        @media screen and (max-width: $mobile) {
+            margin-top: 2rem;
+        }
 
-//         .nav-link {
-//             font-size: 80px !important;
-//             color: $color-base;
-//             position: $relative;
-//             font-family: $title;
-//             transition: color 0.3s ease-in-out;
+        .nav-link {
+            font-size: 80px !important;
+            color: $color-base;
+            position: $relative;
+            font-family: $title;
+            transition: color 0.3s ease-in-out;
 
-//             &::before {
-//                 right: 30%;
-//                 bottom: 0;
-//                 height: 2px;
-//                 content: '';
-//                 width: 0;
-//                 position: $absolute;
-//                 visibility: $hidden;
-//                 transform: translateX(-50%);
-//                 background-color: $color-subtitle !important;
-//                 transition: all 0.3s ease-in-out;
-//             }
+            &::before {
+                right: 30%;
+                bottom: 0;
+                height: 2px;
+                content: '';
+                width: 0;
+                position: $absolute;
+                visibility: $hidden;
+                transform: translateX(-50%);
+                background-color: $color-subtitle !important;
+                transition: all 0.3s ease-in-out;
+            }
 
-//             &:hover,
-//             &:focus,
-//             &:active {
-//                 color: $color-subtitle !important;
+            &:hover,
+            &:focus,
+            &:active {
+                color: $color-subtitle !important;
 
-//                 &:before {
-//                     visibility: visible;
-//                     width: 50%;
-//                 }
-//             }
-//         }
-//     }
-// }
+                &:before {
+                    visibility: visible;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

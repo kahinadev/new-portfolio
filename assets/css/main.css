@@ -216,7 +216,79 @@ h3 {
 }
 
 .sidenav {
-  display: none;
+  top: 0;
+  right: 0;
+  width: 0;
+  z-index: 3;
+  height: 100%;
+  position: fixed;
+  overflow-x: hidden;
+  transition: width 0.3s ease;
+  background-color: #EBEBEB;
+}
+.sidenav .menu-sidebar {
+  padding: 2rem 5rem;
+}
+@media screen and (max-width: 578px) {
+  .sidenav .menu-sidebar {
+    padding: 2rem;
+  }
+}
+.sidenav .reg-sidenav {
+  display: flex;
+  justify-content: space-between;
+}
+.sidenav .reg-sidenav a,
+.sidenav .reg-sidenav .close {
+  font-size: 17px !important;
+}
+.sidenav .reg-sidenav .close {
+  color: #292929;
+  padding: 0 !important;
+  background-color: transparent;
+}
+.sidenav .reg-sidenav .languages {
+  margin-top: auto;
+}
+.sidenav .reg-sidenav .languages a {
+  text-decoration: none;
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+}
+.sidenav ul {
+  margin-top: 5rem;
+  text-align: center;
+}
+@media screen and (max-width: 578px) {
+  .sidenav ul {
+    margin-top: 2rem;
+  }
+}
+.sidenav ul .nav-link {
+  font-size: 80px !important;
+  color: #292929;
+  position: relative;
+  font-family: "Unica One", sans-serif;
+  transition: color 0.3s ease-in-out;
+}
+.sidenav ul .nav-link::before {
+  right: 30%;
+  bottom: 0;
+  height: 2px;
+  content: "";
+  width: 0;
+  position: absolute;
+  visibility: hidden;
+  transform: translateX(-50%);
+  background-color: #99b57a !important;
+  transition: all 0.3s ease-in-out;
+}
+.sidenav ul .nav-link:hover, .sidenav ul .nav-link:focus, .sidenav ul .nav-link:active {
+  color: #99b57a !important;
+}
+.sidenav ul .nav-link:hover:before, .sidenav ul .nav-link:focus:before, .sidenav ul .nav-link:active:before {
+  visibility: visible;
+  width: 50%;
 }
 
 .footer {
@@ -438,11 +510,22 @@ h3 {
     border-radius: 0rem !important;
   }
 }
-
+.introduction .a-explore {
+  margin-top: 40rem;
+  position: relative;
+}
 @media screen and (max-width: 578px) {
-  .projects-selection .btn {
-    width: 100% !important;
+  .introduction .a-explore {
+    margin-top: 30rem !important;
   }
+}
+.introduction .a-explore a {
+  color: #EBEBEB;
+  font-family: "Unica One", sans-serif;
+  position: relative;
+}
+.introduction .a-explore a i {
+  color: #99b57a;
 }
 
 .project-name {
