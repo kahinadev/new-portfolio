@@ -13,13 +13,13 @@
 
 .subtitle {
   font-size: 28px !important;
-  color: #99b57a;
+  color: #99b57a !important;
   text-transform: uppercase;
   font-family: "Karla", sans-serif;
 }
 
 .marg {
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .marg-top-mobile {
@@ -323,7 +323,7 @@ h3 {
   padding: 20px 35px;
   text-transform: uppercase;
   font-family: "Karla", sans-serif;
-  margin-top: 1rem;
+  margin-top: 2rem;
   transition: all 0.3s ease-in-out;
   background-color: transparent;
 }
@@ -516,7 +516,7 @@ h3 {
 }
 @media screen and (max-width: 578px) {
   .introduction .a-explore {
-    margin-top: 30rem !important;
+    margin-top: 35rem !important;
   }
 }
 .introduction .a-explore a {

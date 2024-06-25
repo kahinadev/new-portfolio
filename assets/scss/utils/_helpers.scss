@@ -18,7 +18,7 @@
 
 .subtitle {
     font-size: 28px !important;
-    color: $color-subtitle;
+    color: $color-subtitle !important;
     text-transform: $uppercase;
     font-family: $subtitle;
 }
@@ -26,11 +26,11 @@
 // MARGIN 
 
 .marg {
-    margin: 3rem 0;
+    margin: $two-rem 0;
 }
 
 .marg-top-mobile {
-    margin-top: 2rem;
+    margin-top: $two-rem;
 }
 
 // BACKGROUND 
