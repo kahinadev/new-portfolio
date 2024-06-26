@@ -17,10 +17,14 @@
 // FONTS 
 
 .subtitle {
-    font-size: 28px !important;
+    font-size: 28px;
     color: $color-subtitle !important;
     text-transform: $uppercase;
     font-family: $subtitle;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 24px !important;
+    }
 }
 
 // MARGIN 
@@ -74,6 +78,10 @@
 
 .dark {
     color: $color-base !important;
+}
+
+.light {
+    color: $color-background !important;
 }
 
 // BANNER

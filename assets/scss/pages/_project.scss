@@ -2,14 +2,18 @@
     h1 {
         @media screen and (max-width: $mobile) {
             margin-top: $five-rem;
-            font-size: 110px !important;
+            font-size: 90px !important;
         }
     }
 }
 
-.projects {
+.projects, 
+.project-images {
     padding: $zero-rem !important;
+    padding-bottom: 10rem !important; 
+}
 
+.projects {
     .card {
         @media screen and (max-width: $tablet) {
             margin-bottom: $two-rem !important;
@@ -19,4 +23,57 @@
             margin-top: -13rem;
         }
     }
+}
+
+.project-name {
+    h1 {
+        margin-top: 10rem;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 90px !important;
+            margin-top: $five-rem !important;
+        }
+
+        br {
+            display: $none;
+
+            @media screen and (max-width: $mobile) {
+                display: $block !important;
+            }
+        }
+    }
+}
+
+.project-intro {
+    img {
+        position: $absolute;
+        width: 40%;
+        margin-top: -12%;
+        right: 0rem;
+        height: 105vh;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+
+        @media screen and (max-width: $tablet) {
+            height: 40vh;
+            margin-top: 0% !important;
+            width: $max !important;
+            border-radius: $radius !important;
+            position: $relative !important;
+        }
+    }
+
+    h2 {
+        @media screen and (max-width: $mobile) {
+            font-size: 70px !important;
+        }
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+.project-images {
+    padding: 10rem $zero-rem $zero-rem $zero-rem !important;
 }

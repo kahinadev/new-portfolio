@@ -12,10 +12,15 @@
 }
 
 .subtitle {
-  font-size: 28px !important;
+  font-size: 28px;
   color: #99b57a !important;
   text-transform: uppercase;
   font-family: "Karla", sans-serif;
+}
+@media screen and (max-width: 578px) {
+  .subtitle {
+    font-size: 24px !important;
+  }
 }
 
 .marg {
@@ -63,6 +68,10 @@
   color: #292929 !important;
 }
 
+.light {
+  color: #EBEBEB !important;
+}
+
 .banner {
   background-size: cover;
   background-repeat: no-repeat;
@@ -98,7 +107,7 @@ body section {
 body p,
 body a {
   color: #292929;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 300;
   font-family: "Comfortaa", sans-serif;
 }
@@ -147,11 +156,11 @@ h1 {
 }
 
 h2 {
-  font-size: 190px;
+  font-size: 178px;
 }
 @media screen and (max-width: 578px) {
   h2 {
-    font-size: 51px !important;
+    font-size: 75px !important;
   }
 }
 @media screen and (max-width: 1480px) {
@@ -161,11 +170,11 @@ h2 {
 }
 
 h3 {
-  font-size: 180px;
+  font-size: 177px;
 }
 @media screen and (max-width: 578px) {
   h3 {
-    font-size: 50px !important;
+    font-size: 70px !important;
   }
 }
 @media screen and (max-width: 1480px) {
@@ -414,6 +423,15 @@ h3 {
   background-color: #292929;
 }
 
+.btn-bg-dark {
+  color: #EBEBEB !important;
+  background-color: #292929 !important;
+}
+.btn-bg-dark:hover, .btn-bg-dark:focus, .btn-bg-dark:active {
+  color: #EBEBEB !important;
+  background-color: #292929;
+}
+
 .btn-accent {
   color: #BACEB6 !important;
   border: 1px solid #BACEB6;
@@ -650,10 +668,47 @@ h3 {
   opacity: 1;
 }
 
+.card-charter {
+  border: 1px solid #292929;
+}
+@media screen and (max-width: 578px) {
+  .card-charter {
+    margin-bottom: 2rem !important;
+  }
+}
+
 .card-branding {
-  text-align: center;
-  border-radius: 20px;
-  margin-bottom: 1rem;
+  height: 100px;
+  width: 250px;
+  display: inline-flex;
+}
+@media screen and (max-width: 578px) {
+  .card-branding {
+    width: 100% !important;
+  }
+}
+
+.card-project-images {
+  padding: 0rem !important;
+  position: relative;
+}
+.card-project-images img {
+  width: 100%;
+  transition: opacity 0.5s ease !important;
+}
+.card-project-images .card-main {
+  opacity: 1;
+}
+.card-project-images .card-hover {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+}
+.card-project-images:hover .card-main, .card-project-images:focus .card-main, .card-project-images:active .card-main {
+  opacity: 0;
+}
+.card-project-images:hover .card-hover, .card-project-images:focus .card-hover, .card-project-images:active .card-hover {
+  opacity: 1;
 }
 
 .modal .modal-content {
@@ -664,6 +719,7 @@ h3 {
 }
 .modal .modal-content .modal-header h5 {
   font-size: 28px !important;
+  font-weight: 800 !important;
 }
 .modal .modal-content .modal-body p {
   font-size: 18px;
@@ -788,13 +844,16 @@ h3 {
 @media screen and (max-width: 578px) {
   .portfolio h1 {
     margin-top: 5rem;
-    font-size: 110px !important;
+    font-size: 90px !important;
   }
 }
 
-.projects {
+.projects,
+.project-images {
   padding: 0rem !important;
+  padding-bottom: 10rem !important;
 }
+
 @media screen and (max-width: 1024px) {
   .projects .card {
     margin-bottom: 2rem !important;
@@ -802,6 +861,55 @@ h3 {
 }
 .projects .card .presentation {
   margin-top: -13rem;
+}
+
+.project-name h1 {
+  margin-top: 10rem;
+}
+@media screen and (max-width: 578px) {
+  .project-name h1 {
+    font-size: 90px !important;
+    margin-top: 5rem !important;
+  }
+}
+.project-name h1 br {
+  display: none;
+}
+@media screen and (max-width: 578px) {
+  .project-name h1 br {
+    display: block !important;
+  }
+}
+
+.project-intro img {
+  position: absolute;
+  width: 40%;
+  margin-top: -12%;
+  right: 0rem;
+  height: 105vh;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+@media screen and (max-width: 1024px) {
+  .project-intro img {
+    height: 40vh;
+    margin-top: 0% !important;
+    width: 100% !important;
+    border-radius: 20px !important;
+    position: relative !important;
+  }
+}
+@media screen and (max-width: 578px) {
+  .project-intro h2 {
+    font-size: 70px !important;
+  }
+}
+.project-intro p {
+  font-size: 20px;
+}
+
+.project-images {
+  padding: 10rem 0rem 0rem 0rem !important;
 }
 
 /*# sourceMappingURL=main.css.map */

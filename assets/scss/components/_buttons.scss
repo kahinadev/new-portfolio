@@ -33,6 +33,18 @@
     }
 }
 
+.btn-bg-dark {
+    color: $color-background !important;
+    background-color: $color-base !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-background !important;
+        background-color: $color-base;
+    }
+}
+
 .btn-accent {
     color: $color-button !important;
     border: 1px solid $color-button;

@@ -28,49 +28,292 @@
 
 </head>
 <body>
-    <header class="header p-2 shadow-sm" id="header" aria-label="Header du site">
-        <nav class="navbar navbar-expand-lg">
+    <header class="header light-header p-2" id="header" role="heading" aria-label="Header du site">
+        <nav class="navbar">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand" aria-label="KahinaDev">
-                    KahinaDev
+                <a href="index.html" class="navbar-brand">
+                    <img src="assets/img/logo/logo-white.webp" class="logo-white" alt="Logo du site web" aria-label="Logo du site web">
+                    <img src="assets/img/logo/logo-black.webp" class="logo-black" alt="Logo du site web" aria-label="Logo du site web">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-label="Ouvrir le menu" 
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="btn button-menu" id="open-sidenav" onclick="openNav()" aria-label="Ouvrir le menu">
+                    <span class="icon-menu">
+                        <span class="text">Menu</span>
+                        <i class="fa-solid fa-circle"></i>
+                    </span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html" aria-label="Accueil">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="a-propos.html" aria-label="À propos">À propos</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" role="button" aria-label="Services" data-bs-toggle="dropdown" aria-expanded="false">
-                                Services <i class="fa-solid fa-plus"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="service.html#developpement">Développement web</a></li>
-                                <li><a class="dropdown-item" href="service.html#design">Web design</a></li>
-                                <li><a class="dropdown-item" href="service.html#refonte">Refonte de site</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html" aria-label="Portfolio">Portfolio</a>
-                        </li>
-                    </ul>   
-                    <div class="contact">
-                        <a href="https://mail.google.com/mail/u/0/#inbox" class="btn btn-accent" type="button" aria-label="Me contacter">
-                          Me contacter
-                        </a>
-                    </div>             
+                <div id="sidenav" class="sidenav">
+                    <div class="menu-sidebar">
+                        <div class="reg-sidenav">
+                            <button id="close-sidenav" class="btn close" onclick="closeNav()" aria-label="Fermer le menu">
+                                <i class="fa-solid fa-xmark"></i> 
+                                <span class="menu-text">Fermer</span>
+                            </button>
+                            <div class="languages">
+                                <a href="kanirgarden.html">Fr</a>
+                                <a href="english/kanirgarden.html">En</a>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link" aria-label="Accueil">
+                                    Accueil
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="a-propos.html" class="nav-link" aria-label="À propos">
+                                    À propos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="services.html" class="nav-link" aria-label="Services">
+                                    Services
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="portfolio.html" class="nav-link" aria-label="Portfolio">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link" aria-label="Contact">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
     <main class="main" id="main" role="main" aria-label="Main du site">
+        <section class="section project-name bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Kanir<br>Garden</h1>
+                        <h2 class="subtitle">Développement * Design * 2024</h2>
+                    </div>
+                    <div class="col-md-6 text">
+                        <a href="https://kanirgarden.myshopify.com/" class="btn btn-bg-dark btn-max">
+                            Voir le site
+                        </a>
+                        <a href="#description" class="btn btn-dark btn-max">
+                            Description
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section project-intro bg-light" id="description">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-12 col-sm-12">
+                        <h2>Projet</h2>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <img src="assets/img/projects/kanirgarden/kanirgarden.webp" class="marg-top-tablet" 
+                        alt="Première image du projet" aria-label="Première image du projet">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="subtitle marg-top-tablet">Description</h3>
+                        <p class="marg">
+                            KanirGarden est un projet dédié au bien-être et à la relaxation, 
+                            offrant une expérience ultime à travers des services de spa haut de gamme. 
+                            Sa mission inclut également la création d’une plateforme e-commerce 
+                            intuitive et élégante. 
+                        </p>
+                        <h3 class="subtitle">Concept</h3>
+                        <p class="marg-top">
+                            Le projet KanirGarden est conçu pour offrir un sanctuaire de bien-être, combinant relaxation et 
+                            excellence. L'objectif est de fournir aux clients un espace où ils peuvent se ressourcer et 
+                            revitaliser leur esprit et leur corps. Grâce au site internet e-commerce intuitif, les clients 
+                            peuvent aisément réserver des sessions bien-être, acheter des produits de qualité, et accéder 
+                            à des conseils de l'équipe d'experts. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section charter bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Charte graphique</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="subtitle marg-top">Typographies</h4>
+                        <p class="marg">
+                            <strong>- Playfair Display :</strong> Avec son élégance classique et ses constrates marqués, évoque le luxe et la 
+                            sophistication. 
+                            <br>
+                            <strong>- Nunito :</strong> Avec ses courbes arrondies et son aspect moderne et chaleureux, apporte convivialité 
+                            et lisbilité. 
+                            <br>
+                            <br>
+                            Ensemble, elles créent un équilibre parfait entre raffinement et modernité, reflétant une expérience de bien-être 
+                            de haute qualité tout en étant accueillante et relaxante. Ces typographies combinées apportent une touche de 
+                            sophistication discrète et de confort, idéales pour l'ambiance apaisante et invitante de KanirGarden.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-charter">
+                            <img src="assets/img/projects/kanirgarden/charter/Playfair-Display.webp" class="marg-top" alt="Première typographie" aria-label="Première typographie">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-charter">
+                            <img src="assets/img/projects/kanirgarden/charter/Nunito.webp" class="marg-top" alt="Deuxième typographie" aria-label="Deuxième typographie">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="subtitle marg-top">
+                            Couleurs
+                        </h4>
+                        <p class="marg-top">
+                            Les couleurs choisies reflètent l'essence du spa et centre de bien-être, qui évoque le luxe et la 
+                            sophistication, tout en créant une atmosphère exclusive et apaisante. 
+                        </p>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="card card-branding marg-top aos-init aos-animation" data-aos="fade-down" data-aos-delay="400" style="background-color: #4B3042;">
+                            <h4 type="button" class="light" data-bs-toggle="modal" data-bs-target="#exampleModal">Couleur n°1</h4>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-5" id="exampleModalLabel">Prune foncée</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            Cette couleur riche et profonde évoque <strong>le luxe</strong>, <strong>la sophistication</strong> et une atmosphère 
+                                            <strong>calme</strong> et <strong>apaisante</strong>, parfaite pour signaler une expérience de haute qualité et exclusive 
+                                            dans un spa.
+                                        </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-branding marg-top aos-init aos-animation" data-aos="fade-down" data-aos-delay="400" style="background-color: #AF83A1;">
+                            <h4 type="button" class="light" data-bs-toggle="modal" data-bs-target="#exampleModal1">Couleur n°2</h4>
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-5" id="exampleModalLabel">Vieux rose</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            Cette nuance douce et élégante de rose symbolise <strong>la féminité</strong>, <strong>la chaleur</strong> et <strong>le confort</strong>, 
+                                            créant une ambiance accueillante et apaisante idéale pour un centre de bien-être et spa. 
+                                        </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-branding marg-top aos-init aos-animation" data-aos="fade-down" data-aos-delay="400" style="background-color: #CBAEC2;">
+                            <h4 class="dark" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">Couleur n°3</h4>
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-5" id="exampleModalLabel">Rose lavande</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            Cette teinte combine <strong>douceur</strong> et <strong>tranquilité</strong> avec <strong>une touche de luxe</strong>, 
+                                            contribuant à instaurer une ambiance détendue et sereine, parfaite pour les espaces de relaxation.
+                                        </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-branding marg-top aos-init aos-animation" data-aos="fade-down" data-aos-delay="400" style="background-color: #DFDBEA;">
+                            <h4 class="dark" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">Couleur n°4</h4>
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-5" id="exampleModalLabel">Gris lavande</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            Cette couleur claire et douce évoque <strong>la tranquilité</strong>, <strong>la paix</strong> et <strong>la sophistication discrète</strong>, 
+                                            créant une atmosphère sereine et apaisante pour les salles de soins et de détente. 
+                                        </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-branding marg-top aos-init aos-animation" data-aos="fade-down" data-aos-delay="400" style="background-color: #F2F2F2;">
+                            <h4 class="dark" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4">Couleur n°5</h4>
+                            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-5" id="exampleModalLabel">Gris clair</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            Cette couleur neutre et légère, associée à <strong>la pureté</strong>, et <strong>la simplicité</strong>, offre 
+                                            une toile de fond <strong>apaisante</strong> et <strong>propre</strong>, mettant en valeur les autres couleurs 
+                                            sans être accablante.
+                                        </p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section project-images bg-light">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3>Mockup branding</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card card-project-images">
+                            <img src="assets/img/projects/kanirgarden/mockup/carte-de-fidelite-devant.webp" class="marg-top card-image card-main" alt="">
+                            <img src="assets/img/projects/kanirgarden/mockup/carte-de-fidelite-derriere.webp" class="marg-top card-image card-hover" alt="">
+                            <h4 class="subtitle marg-top">Carte de fidélité</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-project-images">
+                            <img src="assets/img/projects/kanirgarden/mockup/tasse-logo-blanc-une.webp" class="marg-top card-image card-main" alt="">
+                            <img src="assets/img/projects/kanirgarden/mockup/tasse-logo-blanc-deux.webp" class="marg-top card-image card-hover" alt="">
+                            <h4 class="subtitle marg-top">Mockup tasse logo</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-project-images">
+                            <img src="assets/img/projects/kanirgarden/mockup/huile-nourrissante-fermer.webp" class="marg-top card-image card-main" alt="">
+                            <img src="assets/img/projects/kanirgarden/mockup/huile-nourrissante-ouvert.webp" class="marg-top card-image card-hover" alt="">
+                            <h4 class="subtitle marg-top">Produit huile nourrissante</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section project-mockups bg-light">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3>Autres mockups</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--<main class="main" id="main" role="main" aria-label="Main du site">
         <section class="project-banner banner worldhweels" aria-label="Bannière du projet">
             <div class="container">
                 <div class="row">
@@ -165,9 +408,9 @@
                 </div>
             </div>
         </section>
-    </main>
+    </main>-->
     
-    <footer id="footer" class="footer bg-light shadow-sm" role="complementary" aria-label="Footer du site">
+    <footer id="footer" class="footer bg-dark shadow-sm" role="complementary" aria-label="Footer du site">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
@@ -206,7 +449,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-12 col-md-12 text-center">
+                <div class="col-lg-12 col-md-12">
                     <div class="reseaux">
                         <ul class="list-unstyled">
                             <li>
@@ -246,5 +489,14 @@
     <script src="https://kit.fontawesome.com/93f593ecee.js" 
     crossorigin="anonymous"></script>
     <script src="assets/js/website.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+        });
+    </script>
 </body>
 </html>

@@ -176,8 +176,52 @@
     }
 }
 
+.card-charter {
+    border: 1px solid $color-base;
+
+    @media screen and (max-width: $mobile) {
+        margin-bottom: 2rem !important;
+    }
+}
+
 .card-branding {
-    text-align: center;
-    border-radius: $radius;
-    margin-bottom: 1rem;
+    height: 100px;
+    width: 250px;
+    display: inline-flex;
+
+    @media screen and (max-width: $mobile) {
+        width: $max !important;
+    }
+}
+
+.card-project-images {
+    padding: $zero-rem !important;
+    position: $relative;
+
+    img {
+        width: $max;
+        transition: opacity 0.5s ease !important;
+    }
+
+    .card-main {
+        opacity: 1;
+    }
+
+    .card-hover {
+        opacity: 0;
+        width: 100%;
+        position: $absolute;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        .card-main {
+            opacity: 0;
+        }
+
+        .card-hover {
+            opacity: 1;
+        }
+    }
 }
