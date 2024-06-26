@@ -189,6 +189,7 @@ h3 {
 }
 .header .navbar img {
   width: 15%;
+  margin-left: -20px;
 }
 @media screen and (max-width: 578px) {
   .header .navbar img {
@@ -442,46 +443,113 @@ h3 {
 .card {
   border: none;
   padding: 2rem;
+  border-radius: 30px;
   background-color: transparent;
 }
 
 .card-service,
-.card-contact {
-  border: 1px solid #292929;
+.card-contact,
+.card-language,
+.card-job {
   transition: all 0.3s ease-in-out;
+}
+.card-service p,
+.card-contact p,
+.card-language p,
+.card-job p {
+  font-size: 20px !important;
+}
+
+.card-service,
+.card-contact,
+.card-language {
+  border: 1px solid #292929;
 }
 .card-service:hover, .card-service:focus, .card-service:active,
 .card-contact:hover,
 .card-contact:focus,
-.card-contact:active {
+.card-contact:active,
+.card-language:hover,
+.card-language:focus,
+.card-language:active {
   background-color: #292929;
 }
 .card-service:hover h4,
+.card-service:hover i,
 .card-service:hover p, .card-service:focus h4,
+.card-service:focus i,
 .card-service:focus p, .card-service:active h4,
+.card-service:active i,
 .card-service:active p,
 .card-contact:hover h4,
+.card-contact:hover i,
 .card-contact:hover p,
 .card-contact:focus h4,
+.card-contact:focus i,
 .card-contact:focus p,
 .card-contact:active h4,
-.card-contact:active p {
+.card-contact:active i,
+.card-contact:active p,
+.card-language:hover h4,
+.card-language:hover i,
+.card-language:hover p,
+.card-language:focus h4,
+.card-language:focus i,
+.card-language:focus p,
+.card-language:active h4,
+.card-language:active i,
+.card-language:active p {
   color: #EBEBEB;
 }
 .card-service:hover .btn, .card-service:focus .btn, .card-service:active .btn,
 .card-contact:hover .btn,
 .card-contact:focus .btn,
-.card-contact:active .btn {
+.card-contact:active .btn,
+.card-language:hover .btn,
+.card-language:focus .btn,
+.card-language:active .btn {
   color: #EBEBEB !important;
   border: 1px solid #EBEBEB !important;
 }
 .card-service h4,
-.card-contact h4 {
+.card-contact h4,
+.card-language h4 {
   font-size: 25px;
 }
-.card-service p,
-.card-contact p {
+
+.card-language .icon,
+.card-job .icon {
+  display: flex;
+  color: #292929;
+}
+.card-language .icon i,
+.card-job .icon i {
   font-size: 20px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.card-language h5,
+.card-job h5 {
+  font-size: 20px !important;
+}
+
+.card-job {
+  border: 1px solid #EBEBEB !important;
+}
+.card-job:hover, .card-job:focus, .card-job:active {
+  background-color: #EBEBEB !important;
+}
+.card-job:hover h4,
+.card-job:hover p,
+.card-job:hover .btn, .card-job:focus h4,
+.card-job:focus p,
+.card-job:focus .btn, .card-job:active h4,
+.card-job:active p,
+.card-job:active .btn {
+  color: #292929 !important;
+}
+.card-job:hover .btn, .card-job:focus .btn, .card-job:active .btn {
+  border: 1px solid #292929 !important;
 }
 
 .card-selection {
@@ -645,6 +713,65 @@ h3 {
 }
 .introduction .a-explore a i {
   color: #99b57a;
+}
+
+.about-me h1 {
+  font-size: 320px;
+  line-height: 14rem;
+}
+@media screen and (max-width: 578px) {
+  .about-me h1 {
+    font-size: 107px !important;
+    line-height: 6rem !important;
+  }
+}
+@media screen and (max-width: 1480px) {
+  .about-me h1 {
+    font-size: 172px;
+    line-height: 9rem;
+  }
+}
+.about-me h2 {
+  color: #BACEB6;
+  font-size: 100px;
+}
+@media screen and (max-width: 578px) {
+  .about-me h2 {
+    font-size: 52px !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about-me h2 {
+    font-size: 90px;
+  }
+}
+.about-me img {
+  height: 600px;
+  width: 600px;
+  z-index: 8;
+  margin-top: -10%;
+  position: relative;
+}
+@media screen and (max-width: 578px) {
+  .about-me img {
+    height: 350px !important;
+    width: 318px !important;
+    margin: 1rem 0rem !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about-me img {
+    margin: 2rem 0rem;
+  }
+}
+
+.about-intro img {
+  height: 500px;
+}
+@media screen and (max-width: 578px) {
+  .about-intro img {
+    height: 300px !important;
+  }
 }
 
 .project-name {

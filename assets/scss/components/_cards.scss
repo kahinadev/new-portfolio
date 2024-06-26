@@ -1,13 +1,25 @@
 .card {
     border: $none;
     padding: $two-rem;
+    border-radius: 30px;
     background-color: transparent;
 }
 
 .card-service,
-.card-contact {
-    border: 1px solid $color-base;
+.card-contact,
+.card-language,
+.card-job {
     transition: all 0.3s ease-in-out;
+
+    p {
+        font-size: 20px !important;
+    }
+}
+
+.card-service,
+.card-contact,
+.card-language {
+    border: 1px solid $color-base;
 
     &:hover,
     &:focus,
@@ -15,6 +27,7 @@
         background-color: $color-base;
 
         h4,
+        i,
         p {
             color: $color-background;
         }
@@ -28,9 +41,43 @@
     h4 {
         font-size: 25px;
     }
+}
 
-    p {
-        font-size: 20px;
+.card-language,
+.card-job {
+    .icon {
+        display: $flex;
+        color: $color-base;
+
+        i {
+            font-size: 20px;
+            margin-top: 5px;
+            margin-right: 10px;
+        }
+    }
+
+    h5 {
+        font-size: 20px !important;
+    }
+}
+
+.card-job {
+    border: 1px solid $color-background !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $color-background !important;
+
+        h4,
+        p,
+        .btn {
+            color: $color-base !important;
+        }
+
+        .btn {
+            border: 1px solid $color-base !important;
+        }
     }
 }
 

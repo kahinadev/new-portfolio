@@ -22,8 +22,8 @@ document.addEventListener("scroll", function () {
 
     const header = document.getElementById("header");
     const sections = document.querySelectorAll(".section");
-    const logoBlack = document.querySelector(".logo-black"); 
-    const logoWhite = document.querySelector(".logo-white"); 
+    const logoBlack = document.querySelector(".logo-black");
+    const logoWhite = document.querySelector(".logo-white");
     let currentSection = null;
 
     sections.forEach(section => {
@@ -63,4 +63,4 @@ document.addEventListener("scroll", function () {
     }
 
 
-}); 
+});
