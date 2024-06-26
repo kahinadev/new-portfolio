@@ -29,8 +29,14 @@
     margin: $two-rem 0;
 }
 
-.marg-top-mobile {
+.marg-top {
     margin-top: $two-rem;
+}
+
+.marg-top-mobile {
+    @media screen and (max-width: $mobile) {
+        margin-top: $two-rem;
+    }
 }
 
 // BACKGROUND 

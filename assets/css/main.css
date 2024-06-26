@@ -22,8 +22,14 @@
   margin: 2rem 0;
 }
 
-.marg-top-mobile {
+.marg-top {
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 578px) {
+  .marg-top-mobile {
+    margin-top: 2rem;
+  }
 }
 
 .bg-light {
@@ -125,7 +131,7 @@ h1 {
 }
 @media screen and (max-width: 578px) {
   h1 {
-    font-size: 56px !important;
+    font-size: 52px !important;
   }
 }
 @media screen and (max-width: 1480px) {
@@ -139,12 +145,12 @@ h2 {
 }
 @media screen and (max-width: 578px) {
   h2 {
-    font-size: 55px !important;
+    font-size: 51px !important;
   }
 }
 @media screen and (max-width: 1480px) {
   h2 {
-    font-size: 120px;
+    font-size: 100px;
   }
 }
 
@@ -153,12 +159,12 @@ h3 {
 }
 @media screen and (max-width: 578px) {
   h3 {
-    font-size: 54px !important;
+    font-size: 50px !important;
   }
 }
 @media screen and (max-width: 1480px) {
   h3 {
-    font-size: 110px;
+    font-size: 100px;
   }
 }
 
@@ -172,12 +178,22 @@ h3 {
   background-color: transparent !important;
   transition: background-color 0.3s, color 0.3s;
 }
+@media screen and (max-width: 578px) {
+  .header {
+    padding: 0rem !important;
+  }
+}
 .header .navbar {
   display: flex;
   justify-content: space-between;
 }
 .header .navbar img {
   width: 15%;
+}
+@media screen and (max-width: 578px) {
+  .header .navbar img {
+    margin-left: -8px;
+  }
 }
 .header .button-menu {
   color: #99b57a;
@@ -187,7 +203,7 @@ h3 {
 }
 @media screen and (max-width: 578px) {
   .header .button-menu {
-    right: 1.8rem;
+    right: 0.7rem;
     position: absolute;
   }
 }
@@ -213,6 +229,50 @@ h3 {
   font-family: "Unica One", sans-serif;
   font-weight: 800;
   letter-spacing: 0.9px;
+}
+.header .open {
+  width: 100%;
+}
+
+.transparent-header .logo-black,
+.dark-header .logo-black {
+  display: none !important;
+}
+.transparent-header .logo-white,
+.dark-header .logo-white {
+  display: block !important;
+}
+
+.light-header .logo-black {
+  display: block !important;
+}
+.light-header .logo-white {
+  display: none !important;
+}
+.light-header .button-menu:hover i,
+.light-header .button-menu:hover .text, .light-header .button-menu:focus i,
+.light-header .button-menu:focus .text, .light-header .button-menu:active i,
+.light-header .button-menu:active .text {
+  color: #292929 !important;
+}
+.light-header .button-menu .text {
+  color: #292929;
+}
+
+.dark-header .sidenav {
+  background-color: #292929 !important;
+}
+.dark-header .sidenav a,
+.dark-header .sidenav .close {
+  color: #EBEBEB !important;
+}
+
+.none {
+  display: none !important;
+}
+
+.block {
+  display: block !important;
 }
 
 .sidenav {
@@ -337,6 +397,15 @@ h3 {
   background-color: #EBEBEB;
 }
 
+.btn-dark {
+  color: #292929 !important;
+  border: 1px solid #292929;
+}
+.btn-dark:hover, .btn-dark:focus, .btn-dark:active {
+  color: #EBEBEB !important;
+  background-color: #292929;
+}
+
 .btn-accent {
   color: #BACEB6 !important;
   border: 1px solid #BACEB6;
@@ -344,6 +413,10 @@ h3 {
 .btn-accent:hover, .btn-accent:focus, .btn-accent:active {
   color: #233221 !important;
   background-color: #BACEB6;
+}
+
+.btn-max {
+  width: 100%;
 }
 
 .list li {
@@ -370,6 +443,30 @@ h3 {
   background-color: transparent;
 }
 
+.card-service {
+  border: 1px solid #292929;
+  transition: all 0.3s ease-in-out;
+}
+.card-service:hover, .card-service:focus, .card-service:active {
+  background-color: #292929;
+}
+.card-service:hover h4,
+.card-service:hover p, .card-service:focus h4,
+.card-service:focus p, .card-service:active h4,
+.card-service:active p {
+  color: #EBEBEB;
+}
+.card-service:hover .btn, .card-service:focus .btn, .card-service:active .btn {
+  color: #EBEBEB !important;
+  border: 1px solid #EBEBEB !important;
+}
+.card-service h4 {
+  font-size: 25px;
+}
+.card-service p {
+  font-size: 20px;
+}
+
 .card-selection {
   padding: 0rem !important;
   margin-bottom: 4rem;
@@ -389,7 +486,7 @@ h3 {
 }
 @media screen and (max-width: 578px) {
   .card-selection img {
-    height: 63vh !important;
+    height: 42vh !important;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -410,7 +507,7 @@ h3 {
 }
 @media screen and (max-width: 578px) {
   .card-selection .infos-project .infos {
-    display: none;
+    display: none !important;
   }
 }
 .card-selection .infos-project .infos span {
@@ -517,6 +614,11 @@ h3 {
 @media screen and (max-width: 578px) {
   .introduction .a-explore {
     margin-top: 35rem !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .introduction .a-explore {
+    margin-top: 55rem;
   }
 }
 .introduction .a-explore a {

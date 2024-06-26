@@ -8,12 +8,20 @@
     background-color: transparent !important;
     transition: background-color 0.3s, color 0.3s;
 
+    @media screen and (max-width: $mobile) {
+        padding: $zero-rem !important;
+    }
+
     .navbar {
         display: $flex;
         justify-content: $space-between;
 
         img {
             width: 15%;
+
+            @media screen and (max-width: $mobile) {
+                margin-left: -8px;
+            }
         }
     }
 
@@ -24,7 +32,7 @@
         transition: transform 0.5s ease !important;
 
         @media screen and (max-width: $mobile) {
-            right: 1.8rem;
+            right: 0.7rem;
             position: $absolute;
         }
 
@@ -42,6 +50,7 @@
                     color: $color-background;
                 }
             }
+
             .text {
                 color: $color-background;
             }
@@ -58,11 +67,70 @@
             letter-spacing: 0.9px;
         }
     }
+
+    .open {
+        width: $max;
+    }
 }
 
-// .transparent-header {
-//     background-color: $transparent !important;
-// }
+.transparent-header,
+.dark-header {
+    .logo-black {
+        display: $none !important;
+    }
+
+    .logo-white {
+        display: $block !important;
+    }
+}
+
+.light-header {
+    .logo-black {
+        display: $block !important;
+    }
+
+    .logo-white {
+        display: $none !important;
+    }
+
+    .button-menu {
+
+        &:hover,
+        &:focus,
+        &:active {
+
+            i,
+            .text {
+                color: $color-base !important;
+            }
+        }
+
+        .text {
+            color: $color-base;
+        }
+    }
+
+}
+
+.dark-header {
+    .sidenav {
+        background-color: $color-base !important;
+
+        a,
+        .close {
+            color: $color-background !important;
+        }
+    }
+}
+
+.none {
+    display: $none !important;
+}
+
+.block {
+    display: $block !important;
+}
+
 
 // .dark-header {
 
@@ -70,14 +138,7 @@
 //         color: $color-background !important;
 //     }
 
-//     .sidenav {
-//         background-color: $color-base !important;
 
-//         a,
-//         .close {
-//             color: $color-background !important;
-//         }
-//     }
 // }
 
 // .light-header {

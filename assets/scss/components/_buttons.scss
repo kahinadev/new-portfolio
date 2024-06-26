@@ -21,6 +21,18 @@
     }
 }
 
+.btn-dark {
+    color: $color-base !important;
+    border: 1px solid $color-base;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-background !important;
+        background-color: $color-base;
+    }
+}
+
 .btn-accent {
     color: $color-button !important;
     border: 1px solid $color-button;
@@ -31,4 +43,8 @@
         color: $color-title !important;
         background-color: $color-button;
     }
+}
+
+.btn-max {
+    width: $max;
 }

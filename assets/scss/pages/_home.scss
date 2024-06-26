@@ -33,6 +33,10 @@
             margin-top: 35rem !important;
         }
 
+        @media screen and (max-width: $tablet) {
+            margin-top: 55rem;
+        }
+
         a {
             color: $color-background;
             font-family: $title;
