@@ -8,13 +8,13 @@
 
 body {
     min-height: 100vh;
-    background-color: $color-background;
+    background-color: $color-base;
 
     section {
         padding: 10rem $five-rem;
 
         @media screen and (max-width: $mobile) {
-            padding: $five-rem 20px !important;
+            padding: 10rem 20px !important;
         }
     }
 
