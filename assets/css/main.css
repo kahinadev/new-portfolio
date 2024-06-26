@@ -698,13 +698,23 @@ h3 {
     border-radius: 0rem !important;
   }
 }
+@media screen and (max-width: 578px) {
+  .introduction #a-explore {
+    margin-top: 35rem !important;
+  }
+}
 .introduction .a-explore {
   margin-top: 40rem;
   position: relative;
 }
-@media screen and (max-width: 578px) {
+@media screen and (max-width: 1024px) {
   .introduction .a-explore {
-    margin-top: 35rem !important;
+    margin-top: 40rem !important;
+  }
+}
+@media screen and (max-width: 1480px) {
+  .introduction .a-explore {
+    margin-top: 30rem;
   }
 }
 .introduction .a-explore a {

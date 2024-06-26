@@ -25,12 +25,22 @@
         }
     }
 
+    #a-explore {
+        @media screen and (max-width: $mobile) {
+            margin-top: 35rem !important;
+        }
+    }
+
     .a-explore {
         margin-top: 40rem;
         position: $relative;
 
-        @media screen and (max-width: $mobile) {
-            margin-top: 35rem !important;
+        @media screen and (max-width: $tablet) {
+            margin-top: 40rem !important;
+        }
+
+        @media screen and (max-width: $desktop) {
+            margin-top: 30rem;
         }
 
         a {
