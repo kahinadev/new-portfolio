@@ -365,6 +365,7 @@ h3 {
 .footer p,
 .footer a {
   font-size: 16px !important;
+  color: #EBEBEB !important;
 }
 .footer .reseaux {
   margin-top: 2rem;
@@ -428,6 +429,7 @@ h3 {
   display: flex;
   text-decoration: none;
   justify-content: space-between;
+  font-size: 22px;
 }
 .list li:hover, .list li:focus, .list li:active {
   padding: 2rem;
@@ -443,27 +445,42 @@ h3 {
   background-color: transparent;
 }
 
-.card-service {
+.card-service,
+.card-contact {
   border: 1px solid #292929;
   transition: all 0.3s ease-in-out;
 }
-.card-service:hover, .card-service:focus, .card-service:active {
+.card-service:hover, .card-service:focus, .card-service:active,
+.card-contact:hover,
+.card-contact:focus,
+.card-contact:active {
   background-color: #292929;
 }
 .card-service:hover h4,
 .card-service:hover p, .card-service:focus h4,
 .card-service:focus p, .card-service:active h4,
-.card-service:active p {
+.card-service:active p,
+.card-contact:hover h4,
+.card-contact:hover p,
+.card-contact:focus h4,
+.card-contact:focus p,
+.card-contact:active h4,
+.card-contact:active p {
   color: #EBEBEB;
 }
-.card-service:hover .btn, .card-service:focus .btn, .card-service:active .btn {
+.card-service:hover .btn, .card-service:focus .btn, .card-service:active .btn,
+.card-contact:hover .btn,
+.card-contact:focus .btn,
+.card-contact:active .btn {
   color: #EBEBEB !important;
   border: 1px solid #EBEBEB !important;
 }
-.card-service h4 {
+.card-service h4,
+.card-contact h4 {
   font-size: 25px;
 }
-.card-service p {
+.card-service p,
+.card-contact p {
   font-size: 20px;
 }
 

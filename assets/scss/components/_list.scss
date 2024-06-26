@@ -6,6 +6,7 @@
 
         a {
             @include list;
+            font-size: 22px;
         }
 
         &:hover,
@@ -13,6 +14,7 @@
         &:active {
             padding: 2rem;
             background-color: $color-title;
+
             a {
                 color: $color-background;
             }
