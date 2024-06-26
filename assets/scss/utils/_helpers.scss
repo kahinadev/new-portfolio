@@ -39,6 +39,12 @@
     }
 }
 
+.marg-top-tablet {
+    @media screen and (max-width: $tablet) {
+        margin-top: $two-rem;
+    }
+}
+
 // BACKGROUND 
 
 .bg-light {

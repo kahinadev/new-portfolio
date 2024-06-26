@@ -32,6 +32,12 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .marg-top-tablet {
+    margin-top: 2rem;
+  }
+}
+
 .bg-light {
   background-color: #EBEBEB !important;
 }
@@ -699,11 +705,6 @@ h3 {
 @media screen and (max-width: 578px) {
   .introduction .a-explore {
     margin-top: 35rem !important;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .introduction .a-explore {
-    margin-top: 55rem;
   }
 }
 .introduction .a-explore a {
