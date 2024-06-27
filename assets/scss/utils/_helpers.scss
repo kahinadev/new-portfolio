@@ -17,13 +17,13 @@
 // FONTS 
 
 .subtitle {
-    font-size: 28px;
+    font-size: 26px;
     color: $color-subtitle !important;
     text-transform: $uppercase;
     font-family: $subtitle;
 
     @media screen and (max-width: $mobile) {
-        font-size: 24px !important;
+        font-size: 21px !important;
     }
 }
 
@@ -98,4 +98,19 @@
 .panel {
     height: $max;
     width: $max;
+}
+
+// EXPLORE
+
+.a-explore {
+    position: $relative;
+
+    a {
+        font-family: $title;
+        position: $relative;
+
+        i {
+            color: $color-subtitle;
+        }
+    }
 }

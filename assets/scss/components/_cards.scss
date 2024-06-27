@@ -189,7 +189,7 @@
     width: 250px;
     display: inline-flex;
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $desktop) {
         width: $max !important;
     }
 }

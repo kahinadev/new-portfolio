@@ -12,14 +12,14 @@
 }
 
 .subtitle {
-  font-size: 28px;
+  font-size: 26px;
   color: #99b57a !important;
   text-transform: uppercase;
   font-family: "Karla", sans-serif;
 }
 @media screen and (max-width: 578px) {
   .subtitle {
-    font-size: 24px !important;
+    font-size: 21px !important;
   }
 }
 
@@ -84,6 +84,17 @@
   width: 100%;
 }
 
+.a-explore {
+  position: relative;
+}
+.a-explore a {
+  font-family: "Unica One", sans-serif;
+  position: relative;
+}
+.a-explore a i {
+  color: #99b57a;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -99,9 +110,9 @@ body {
 body section {
   padding: 10rem 5rem;
 }
-@media screen and (max-width: 578px) {
+@media screen and (max-width: 1480px) {
   body section {
-    padding: 10rem 20px !important;
+    padding: 5rem 20px !important;
   }
 }
 body p,
@@ -118,7 +129,7 @@ body a strong {
 @media screen and (max-width: 578px) {
   body p,
 body a {
-    font-size: 20px !important;
+    font-size: 18.5px !important;
   }
 }
 
@@ -134,7 +145,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+  font-weight: 700;
   width: 100%;
   color: #233221;
   word-wrap: break-word;
@@ -151,16 +162,16 @@ h1 {
 }
 @media screen and (max-width: 1480px) {
   h1 {
-    font-size: 130px;
+    font-size: 127px;
   }
 }
 
 h2 {
-  font-size: 178px;
+  font-size: 130px;
 }
 @media screen and (max-width: 578px) {
   h2 {
-    font-size: 75px !important;
+    font-size: 51px !important;
   }
 }
 @media screen and (max-width: 1480px) {
@@ -174,12 +185,12 @@ h3 {
 }
 @media screen and (max-width: 578px) {
   h3 {
-    font-size: 70px !important;
+    font-size: 50px !important;
   }
 }
 @media screen and (max-width: 1480px) {
   h3 {
-    font-size: 100px;
+    font-size: 90px;
   }
 }
 
@@ -682,7 +693,7 @@ h3 {
   width: 250px;
   display: inline-flex;
 }
-@media screen and (max-width: 578px) {
+@media screen and (max-width: 1480px) {
   .card-branding {
     width: 100% !important;
   }
@@ -761,7 +772,6 @@ h3 {
 }
 .introduction .a-explore {
   margin-top: 40rem;
-  position: relative;
 }
 @media screen and (max-width: 1024px) {
   .introduction .a-explore {
@@ -775,11 +785,6 @@ h3 {
 }
 .introduction .a-explore a {
   color: #EBEBEB;
-  font-family: "Unica One", sans-serif;
-  position: relative;
-}
-.introduction .a-explore a i {
-  color: #99b57a;
 }
 
 .about-me h1 {
@@ -848,12 +853,6 @@ h3 {
   }
 }
 
-.projects,
-.project-images {
-  padding: 0rem !important;
-  padding-bottom: 10rem !important;
-}
-
 @media screen and (max-width: 1024px) {
   .projects .card {
     margin-bottom: 2rem !important;
@@ -864,52 +863,35 @@ h3 {
 }
 
 .project-name h1 {
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 @media screen and (max-width: 578px) {
   .project-name h1 {
     font-size: 90px !important;
+  }
+}
+@media screen and (max-width: 1480px) {
+  .project-name h1 {
     margin-top: 5rem !important;
   }
 }
 .project-name h1 br {
   display: none;
 }
-@media screen and (max-width: 578px) {
+@media screen and (max-width: 1480px) {
   .project-name h1 br {
     display: block !important;
   }
 }
-
-.project-intro img {
-  position: absolute;
-  width: 40%;
-  margin-top: -12%;
-  right: 0rem;
-  height: 105vh;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
+.project-name .a-explore {
+  margin-top: 12rem;
 }
-@media screen and (max-width: 1024px) {
-  .project-intro img {
-    height: 40vh;
-    margin-top: 0% !important;
-    width: 100% !important;
-    border-radius: 20px !important;
-    position: relative !important;
-  }
-}
-@media screen and (max-width: 578px) {
-  .project-intro h2 {
-    font-size: 70px !important;
-  }
-}
-.project-intro p {
-  font-size: 20px;
+.project-name .a-explore a {
+  color: #292929;
 }
 
-.project-images {
-  padding: 10rem 0rem 0rem 0rem !important;
+.banner-image {
+  padding: 0rem !important;
 }
 
 /*# sourceMappingURL=main.css.map */

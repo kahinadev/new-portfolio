@@ -7,11 +7,11 @@
     }
 }
 
-.projects, 
-.project-images {
-    padding: $zero-rem !important;
-    padding-bottom: 10rem !important; 
-}
+// .projects, 
+// .project-images {
+//     padding: $zero-rem;
+//     padding-bottom: 10rem; 
+// }
 
 .projects {
     .card {
@@ -27,53 +27,62 @@
 
 .project-name {
     h1 {
-        margin-top: 10rem;
+        margin-top: 8rem;
 
         @media screen and (max-width: $mobile) {
             font-size: 90px !important;
+        }
+
+        @media screen and (max-width: $desktop) {
             margin-top: $five-rem !important;
         }
 
         br {
             display: $none;
 
-            @media screen and (max-width: $mobile) {
+            @media screen and (max-width: $desktop) {
                 display: $block !important;
             }
         }
     }
-}
 
-.project-intro {
-    img {
-        position: $absolute;
-        width: 40%;
-        margin-top: -12%;
-        right: 0rem;
-        height: 105vh;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-
-        @media screen and (max-width: $tablet) {
-            height: 40vh;
-            margin-top: 0% !important;
-            width: $max !important;
-            border-radius: $radius !important;
-            position: $relative !important;
+    .a-explore {
+        margin-top: 12rem;
+        a {
+            color: $color-base;
         }
     }
-
-    h2 {
-        @media screen and (max-width: $mobile) {
-            font-size: 70px !important;
-        }
-    }
-
-    p {
-        font-size: 20px;
-    }
+}
+.banner-image {
+    padding: $zero-rem !important;
 }
 
-.project-images {
-    padding: 10rem $zero-rem $zero-rem $zero-rem !important;
-}
+// .project-intro {
+//     img {
+//         position: $absolute;
+//         width: 40%;
+//         margin-top: -12%;
+//         right: 0rem;
+//         height: 105vh;
+//         border-top-right-radius: 0px;
+//         border-bottom-right-radius: 0px;
+
+//         @media screen and (max-width: $tablet) {
+//             height: 40vh;
+//             margin-top: 0% !important;
+//             width: $max !important;
+//             border-radius: $radius !important;
+//             position: $relative !important;
+//         }
+//     }
+
+//     h2 {
+//         @media screen and (max-width: $mobile) {
+//             font-size: 70px !important;
+//         }
+//     }
+
+//     p {
+//         font-size: 20px;
+//     }
+// }

@@ -13,8 +13,8 @@ body {
     section {
         padding: 10rem $five-rem;
 
-        @media screen and (max-width: $mobile) {
-            padding: 10rem 20px !important;
+        @media screen and (max-width: $desktop) {
+            padding: 5rem 20px !important;
         }
     }
 
