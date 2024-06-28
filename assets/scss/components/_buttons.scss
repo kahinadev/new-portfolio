@@ -4,7 +4,6 @@
     border-radius: $radius;
     padding: 20px 35px;
     @include all-button;
-    margin-top: $two-rem;
     transition: $transition;
     background-color: transparent;
 }

@@ -1,48 +1,67 @@
 .introduction {
-    height: 100vh;
-    z-index: -1;
-    transition: transform 0.1s ease-out;
-    background-image: url("../img/banner/banner-hijab.webp");
+    .content {
+        z-index: 10;
+        position: $relative !important;
 
-    @media screen and (max-width: $tablet) {
-        padding: $zero-rem !important;
+        @media screen and (max-width: $mobile) {
+            margin-top: 8rem !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            margin-top: $five-rem;
+        }
+
+        h1 {
+            @media screen and (max-width: $mobile) {
+                font-size: 90px !important;
+            }
+        }
+
+        .a-explore {
+            margin-top: $ten-rem;
+
+            @media screen and (max-width: $mobile) {
+                margin-top: $five-rem !important;
+            }
+
+            a {
+                color: $color-background;
+            }
+        }
+    }
+}
+
+.explore {
+    h1 {
+        margin-bottom: $five-rem;
     }
 
-    @media screen and (max-width: $tablet) {
-        background-image: $none !important;
+    p {
+        margin-top: $five-rem;
+
+        @media screen and (max-width: $tablet) {
+            margin-top: $zero-rem !important;
+        }
     }
 
     img {
-        display: $none;
+        height: 650px;
 
-        @media screen and (max-width: $tablet) {
-            height: 100vh;
-            left: $zero;
-            right: $zero;
-            display: $block !important;
-            position: $absolute !important;
-            border-radius: $zero-rem !important;
-        }
-    }
-
-    #a-explore {
         @media screen and (max-width: $mobile) {
-            margin-top: 35rem !important;
+            height: 300px !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            height: 600px;
         }
     }
 
-    .a-explore {
-        margin-top: 40rem;
-        @media screen and (max-width: $tablet) {
-            margin-top: 40rem !important;
-        }
+}
 
-        @media screen and (max-width: $desktop) {
-            margin-top: 30rem;
-        }
+.projects-selection {
+    padding: $zero-rem !important;
 
-        a {
-            color: $color-background;
-        }
+    @media screen and (max-width: $mobile) {
+        padding-top: $five-rem !important;
     }
 }

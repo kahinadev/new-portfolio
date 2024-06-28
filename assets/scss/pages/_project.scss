@@ -48,11 +48,17 @@
 
     .a-explore {
         margin-top: 12rem;
+
+        @media screen and (max-width: $mobile) {
+            margin-top: 9rem !important;
+        }
+
         a {
             color: $color-base;
         }
     }
 }
+
 .banner-image {
     padding: $zero-rem !important;
 }

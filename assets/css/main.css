@@ -63,6 +63,9 @@
 .bg-green {
   background-color: #99b57a !important;
 }
+.bg-green .subtitle {
+  color: #EBEBEB !important;
+}
 
 .dark {
   color: #292929 !important;
@@ -108,11 +111,13 @@ body {
   background-color: #292929;
 }
 body section {
+  z-index: 10;
   padding: 10rem 5rem;
+  position: relative;
 }
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 578px) {
   body section {
-    padding: 5rem 20px !important;
+    padding: 5rem 20px 5rem 20px !important;
   }
 }
 body p,
@@ -135,7 +140,6 @@ body a {
 
 img {
   width: 100%;
-  border-radius: 15px;
   object-fit: cover;
 }
 
@@ -160,11 +164,6 @@ h1 {
     font-size: 52px !important;
   }
 }
-@media screen and (max-width: 1480px) {
-  h1 {
-    font-size: 127px;
-  }
-}
 
 h2 {
   font-size: 130px;
@@ -174,23 +173,18 @@ h2 {
     font-size: 51px !important;
   }
 }
-@media screen and (max-width: 1480px) {
-  h2 {
-    font-size: 100px;
-  }
-}
 
 h3 {
   font-size: 177px;
 }
 @media screen and (max-width: 578px) {
   h3 {
-    font-size: 50px !important;
+    font-size: 80px !important;
   }
 }
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 1024px) {
   h3 {
-    font-size: 90px;
+    font-size: 130px;
   }
 }
 
@@ -215,7 +209,6 @@ h3 {
 }
 .header .navbar img {
   width: 15%;
-  margin-left: -20px;
 }
 @media screen and (max-width: 578px) {
   .header .navbar img {
@@ -225,12 +218,14 @@ h3 {
 .header .button-menu {
   color: #99b57a;
   margin-top: 0px;
+  margin-right: 25px;
   padding: 0 !important;
   transition: transform 0.5s ease !important;
 }
 @media screen and (max-width: 578px) {
   .header .button-menu {
-    right: 0.7rem;
+    right: 0.9rem;
+    margin-right: 0 !important;
     position: absolute;
   }
 }
@@ -270,19 +265,28 @@ h3 {
   display: block !important;
 }
 
-.light-header .logo-black {
+.light-header .logo-black,
+.green-header .logo-black {
   display: block !important;
 }
-.light-header .logo-white {
+.light-header .logo-white,
+.green-header .logo-white {
   display: none !important;
 }
 .light-header .button-menu:hover i,
 .light-header .button-menu:hover .text, .light-header .button-menu:focus i,
 .light-header .button-menu:focus .text, .light-header .button-menu:active i,
-.light-header .button-menu:active .text {
+.light-header .button-menu:active .text,
+.green-header .button-menu:hover i,
+.green-header .button-menu:hover .text,
+.green-header .button-menu:focus i,
+.green-header .button-menu:focus .text,
+.green-header .button-menu:active i,
+.green-header .button-menu:active .text {
   color: #292929 !important;
 }
-.light-header .button-menu .text {
+.light-header .button-menu .text,
+.green-header .button-menu .text {
   color: #292929;
 }
 
@@ -292,6 +296,10 @@ h3 {
 .dark-header .sidenav a,
 .dark-header .sidenav .close {
   color: #EBEBEB !important;
+}
+
+.green-header .sidenav {
+  background-color: #99b57a !important;
 }
 
 .none {
@@ -379,6 +387,8 @@ h3 {
 }
 
 .footer {
+  z-index: 10;
+  position: relative;
   padding: 5rem 0rem;
 }
 .footer .marg {
@@ -411,7 +421,6 @@ h3 {
   padding: 20px 35px;
   text-transform: uppercase;
   font-family: "Karla", sans-serif;
-  margin-top: 2rem;
   transition: all 0.3s ease-in-out;
   background-color: transparent;
 }
@@ -498,7 +507,7 @@ h3 {
 .card-service,
 .card-contact,
 .card-language {
-  border: 1px solid #292929;
+  border: 1px solid #EBEBEB;
 }
 .card-service:hover, .card-service:focus, .card-service:active,
 .card-contact:hover,
@@ -507,7 +516,7 @@ h3 {
 .card-language:hover,
 .card-language:focus,
 .card-language:active {
-  background-color: #292929;
+  background-color: #EBEBEB;
 }
 .card-service:hover h4,
 .card-service:hover i,
@@ -534,7 +543,7 @@ h3 {
 .card-language:active h4,
 .card-language:active i,
 .card-language:active p {
-  color: #EBEBEB;
+  color: #292929;
 }
 .card-service:hover .btn, .card-service:focus .btn, .card-service:active .btn,
 .card-contact:hover .btn,
@@ -543,8 +552,8 @@ h3 {
 .card-language:hover .btn,
 .card-language:focus .btn,
 .card-language:active .btn {
-  color: #EBEBEB !important;
-  border: 1px solid #EBEBEB !important;
+  color: #292929 !important;
+  border: 1px solid #292929 !important;
 }
 .card-service h4,
 .card-contact h4,
@@ -589,20 +598,22 @@ h3 {
 
 .card-selection {
   padding: 0rem !important;
-  margin-bottom: 4rem;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 578px) {
   .card-selection {
-    margin-bottom: 4rem !important;
+    margin-bottom: 19px !important;
   }
 }
 @media screen and (max-width: 1024px) {
   .card-selection {
-    margin-bottom: 6rem;
+    margin-bottom: 12px;
   }
 }
 .card-selection img {
   height: 100vh;
+  opacity: 0.7;
+  background-color: #292929;
 }
 @media screen and (max-width: 578px) {
   .card-selection img {
@@ -614,11 +625,16 @@ h3 {
     height: 60vh;
   }
 }
+.card-selection .infos-project,
+.card-selection .presentation {
+  transition: all 0.3s ease-in-out !important;
+}
 .card-selection .infos-project {
   width: 100%;
   z-index: 3;
+  opacity: 0;
   padding: 0rem 2rem 0rem 2rem;
-  margin: 3rem 0rem;
+  margin: 3rem 0rem 0rem 0rem;
   position: absolute;
 }
 .card-selection .infos-project .infos {
@@ -635,7 +651,7 @@ h3 {
   padding: 1rem;
   border-radius: 20px;
   font-size: 18px !important;
-  color: #233221 !important;
+  color: #292929 !important;
   background-color: #EBEBEB !important;
 }
 .card-selection .presentation {
@@ -644,16 +660,15 @@ h3 {
   padding: 0 1rem;
   position: relative;
   margin-top: -10rem;
-  transition: all 0.3s ease-in-out !important;
 }
 @media screen and (max-width: 578px) {
   .card-selection .presentation {
     margin-top: -13rem !important;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1480px) {
   .card-selection .presentation {
-    margin-top: -15rem;
+    margin-top: -12rem;
   }
 }
 .card-selection .presentation h3,
@@ -672,10 +687,10 @@ h3 {
   text-align: center;
   color: #EBEBEB;
 }
-.card-selection .presentation p {
-  font-size: 17px !important;
-}
-.card-selection:hover .presentation, .card-selection:focus .presentation, .card-selection:active .presentation {
+.card-selection:hover .infos-project,
+.card-selection:hover .presentation, .card-selection:focus .infos-project,
+.card-selection:focus .presentation, .card-selection:active .infos-project,
+.card-selection:active .presentation {
   opacity: 1;
 }
 
@@ -736,113 +751,68 @@ h3 {
   font-size: 18px;
 }
 
-.introduction {
-  height: 100vh;
-  z-index: -1;
-  transition: transform 0.1s ease-out;
-  background-image: url("../img/banner/banner-hijab.webp");
+.introduction .content {
+  z-index: 10;
+  position: relative !important;
 }
-@media screen and (max-width: 1024px) {
-  .introduction {
-    padding: 0rem !important;
+@media screen and (max-width: 578px) {
+  .introduction .content {
+    margin-top: 8rem !important;
   }
 }
 @media screen and (max-width: 1024px) {
-  .introduction {
-    background-image: none !important;
-  }
-}
-.introduction img {
-  display: none;
-}
-@media screen and (max-width: 1024px) {
-  .introduction img {
-    height: 100vh;
-    left: 0;
-    right: 0;
-    display: block !important;
-    position: absolute !important;
-    border-radius: 0rem !important;
+  .introduction .content {
+    margin-top: 5rem;
   }
 }
 @media screen and (max-width: 578px) {
-  .introduction #a-explore {
-    margin-top: 35rem !important;
+  .introduction .content h1 {
+    font-size: 90px !important;
   }
 }
-.introduction .a-explore {
-  margin-top: 40rem;
+.introduction .content .a-explore {
+  margin-top: 10rem;
 }
-@media screen and (max-width: 1024px) {
-  .introduction .a-explore {
-    margin-top: 40rem !important;
+@media screen and (max-width: 578px) {
+  .introduction .content .a-explore {
+    margin-top: 5rem !important;
   }
 }
-@media screen and (max-width: 1480px) {
-  .introduction .a-explore {
-    margin-top: 30rem;
-  }
-}
-.introduction .a-explore a {
+.introduction .content .a-explore a {
   color: #EBEBEB;
 }
 
-.about-me h1 {
-  font-size: 320px;
-  line-height: 14rem;
+.explore h1 {
+  margin-bottom: 5rem;
 }
-@media screen and (max-width: 578px) {
-  .about-me h1 {
-    font-size: 107px !important;
-    line-height: 6rem !important;
+.explore p {
+  margin-top: 5rem;
+}
+@media screen and (max-width: 1024px) {
+  .explore p {
+    margin-top: 0rem !important;
   }
 }
-@media screen and (max-width: 1480px) {
-  .about-me h1 {
-    font-size: 172px;
-    line-height: 9rem;
-  }
-}
-.about-me h2 {
-  color: #BACEB6;
-  font-size: 100px;
+.explore img {
+  height: 650px;
 }
 @media screen and (max-width: 578px) {
-  .about-me h2 {
-    font-size: 48px !important;
+  .explore img {
+    height: 300px !important;
   }
 }
 @media screen and (max-width: 1024px) {
-  .about-me h2 {
-    font-size: 90px;
-  }
-}
-.about-me img {
-  height: 600px;
-  width: 600px;
-  z-index: 8;
-  margin-top: -10%;
-  position: relative;
-}
-@media screen and (max-width: 578px) {
-  .about-me img {
-    height: 350px !important;
-    width: 318px !important;
-    margin: 1rem 0rem !important;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .about-me img {
-    margin: 2rem 0rem;
+  .explore img {
+    height: 600px;
   }
 }
 
-.about-intro img {
-  height: 500px;
+.projects-selection {
+  padding: 0rem !important;
 }
 @media screen and (max-width: 578px) {
-  .about-intro img {
-    height: 300px !important;
+  .projects-selection {
+    padding-top: 5rem !important;
   }
 }
 
@@ -885,6 +855,11 @@ h3 {
 }
 .project-name .a-explore {
   margin-top: 12rem;
+}
+@media screen and (max-width: 578px) {
+  .project-name .a-explore {
+    margin-top: 9rem !important;
+  }
 }
 .project-name .a-explore a {
   color: #292929;

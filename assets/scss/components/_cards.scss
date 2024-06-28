@@ -19,22 +19,22 @@
 .card-service,
 .card-contact,
 .card-language {
-    border: 1px solid $color-base;
+    border: 1px solid $color-background;
 
     &:hover,
     &:focus,
     &:active {
-        background-color: $color-base;
+        background-color: $color-background;
 
         h4,
         i,
         p {
-            color: $color-background;
+            color: $color-base;
         }
 
         .btn {
-            color: $color-background !important;
-            border: 1px solid $color-background !important;
+            color: $color-base !important;
+            border: 1px solid $color-base !important;
         }
     }
 
@@ -83,18 +83,20 @@
 
 .card-selection {
     padding: $zero-rem !important;
-    margin-bottom: 4rem;
+    margin-bottom: 10px;
 
     @media screen and (max-width: $mobile) {
-        margin-bottom: 4rem !important;
+        margin-bottom: 19px !important;
     }
 
     @media screen and (max-width: $tablet) {
-        margin-bottom: 6rem;
+        margin-bottom: 12px;
     }
 
     img {
         height: 100vh;
+        opacity: 0.7;
+        background-color: $color-base;
 
         @media screen and (max-width: $mobile) {
             height: 42vh !important;
@@ -105,11 +107,17 @@
         }
     }
 
+    .infos-project,
+    .presentation {
+        transition: $transition !important;
+    }
+
     .infos-project {
         width: $max;
         z-index: 3;
+        opacity: 0;
         padding: $zero-rem 2rem $zero-rem $two-rem;
-        margin: 3rem $zero-rem;
+        margin: 3rem $zero-rem $zero-rem $zero-rem;
         position: $absolute;
 
         .infos {
@@ -123,7 +131,7 @@
             span {
                 opacity: 0.9;
                 @include span;
-                color: $color-title !important;
+                color: $color-base !important;
                 background-color: $color-background !important;
             }
         }
@@ -135,15 +143,14 @@
         padding: 0 1rem;
         position: $relative;
         margin-top: -10rem;
-        transition: $transition !important;
 
         @media screen and (max-width: $mobile) {
             margin-top: -13rem !important;
         }
 
 
-        @media screen and (max-width: $tablet) {
-            margin-top: -15rem;
+        @media screen and (max-width: $desktop) {
+            margin-top: -12rem;
         }
 
         h3,
@@ -161,15 +168,12 @@
             text-align: center;
             color: $color-background;
         }
-
-        p {
-            font-size: 17px !important;
-        }
     }
 
     &:hover,
     &:focus,
     &:active {
+        .infos-project,
         .presentation {
             opacity: 1;
         }

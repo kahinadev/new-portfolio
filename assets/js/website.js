@@ -51,12 +51,21 @@ document.addEventListener("scroll", function () {
 
             header.classList.add("light-header");
             header.classList.remove("dark-header");
+            header.classList.remove("green-header");
             header.classList.remove("transparent-header");
 
         } else if (currentSection.classList.contains("bg-dark")) {
 
             header.classList.add("dark-header");
             header.classList.remove("light-header");
+            header.classList.remove("green-header");
+            header.classList.remove("transparent-header");
+
+        } else if (currentSection.classList.contains("bg-green")) {
+
+            header.classList.add("green-header");
+            header.classList.remove("light-header");
+            header.classList.remove("dark-header");
             header.classList.remove("transparent-header");
 
         }

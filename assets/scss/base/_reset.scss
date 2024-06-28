@@ -11,10 +11,12 @@ body {
     background-color: $color-base;
 
     section {
-        padding: 10rem $five-rem;
+        z-index: 10;
+        padding: $ten-rem $five-rem;
+        position: $relative;
 
-        @media screen and (max-width: $desktop) {
-            padding: 5rem 20px !important;
+        @media screen and (max-width: $mobile) {
+            padding: $five-rem $twenty $five-rem $twenty !important;
         }
     }
 
@@ -26,6 +28,5 @@ body {
 
 img {
     width: $max;
-    border-radius: 15px;
     object-fit: cover;
 }

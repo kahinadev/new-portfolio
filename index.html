@@ -24,7 +24,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header transparent-header p-2" id="header" role="heading" aria-label="Header du site">
+    <header class="header dark-header" id="header" role="heading" aria-label="Header du site">
         <nav class="navbar">
             <div class="container-fluid">
                 <a href="index.html" class="navbar-brand">
@@ -83,19 +83,20 @@
     </header>
     
     <main class="main" id="main" role="main" aria-label="Main du site">
-        <section class="introduction banner">
-            <div class="container-fluid">
+        <section class="section introduction banner bg-dark">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <img src="assets/img/banner/banner-hijab.webp" alt="Image de moi" aria-label="Image de moi">
-                    </div>
                     <div class="col-md-12 text-center">
-                        <div class="a-explore" id="a-explore">
-                            <a href="#explore" class="text-decoration-none">
-                                <i class="fa-solid fa-arrow-up"></i> 
-                                Scroll pour explorer 
-                                <i class="fa-solid fa-arrow-down"></i>
-                            </a>
+                        <div class="content">
+                            <h1 class="aos-init aos-animation" data-aos="fade-down" data-aos-delay="300">Kahina <br> Ouali</h1>
+                            <h2 class="subtitle aos-init aos-animation" data-aos="fade-down" data-aos-delay="400">Développeuse d'applications symfony</h2>
+                            <div class="a-explore aos-init aos-animation" data-aos="zoom-in" data-aos-delay="500" id="a-explore">
+                                <a href="#explore" class="text-decoration-none">
+                                    <i class="fa-solid fa-arrow-up"></i> 
+                                    Scroll pour explorer 
+                                    <i class="fa-solid fa-arrow-down"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -106,27 +107,34 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h1 class="subtitle aos-init aos-animation" data-aos="zoom-in" data-aos-delay="300">Salut, Hello, Hola, 안녕하세요, سلام</h1>
-                        <h2 class="marg aos-init aos-animation" data-aos="zoom-in" data-aos-delay="300">Développeuse d'applications symfony</h2>
-                        <p class="aos-init aos-animation" data-aos="zoom-in" data-aos-delay="400">
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <p class="aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">
                             Développeuse basée à Paris, FRANCE, <strong>spécialisée dans le développement d’applications PHP/Symfony</strong> à la 
                             recherche d’un emploi à distance.
+                            <br>
+                            <br>
                             Ma passion s’étend aux jeux vidéo, au web design et à l’impact des technologies sur notre quotidien. 
                         </p>
-                        <a href="a-propos.html" class="btn btn-light aos-init aos-animation" data-aos="zoom-in" data-aos-delay="400">
+                        <a href="a-propos.html" class="btn btn-light marg-top aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">
                             En savoir plus sur moi
                         </a>
+                    </div>
+                    <div class="col-lg-6 col-md-12 image">
+                        <img src="assets/img/me/pic-of-me-two.png" class="marg-top-tablet aos-init aos-animation" data-aos="zoom-in" data-aos-delay="500" 
+                        alt="Photo de moi" aria-label="Photo de moi">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section bg-light services">
+        <section class="section bg-dark services">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h3 class="aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">Services</h3>
+                        <h3 class="aos-init aos-animation" data-aos="zoom-in" data-aos-delay="300">Services</h3>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="card card-service marg-top aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card card-service marg-top aos-init aos-animation" data-aos="zoom-in" data-aos-delay="400">
                             <span class="subtitle">
                                 01
                             </span>
@@ -134,13 +142,13 @@
                             <p>
                                 Le développement web est essentiel pour la création de site web, la maintenance, et l'amélioration des sites internet. 
                             </p>
-                            <a href="services.html#developpement" class="btn btn-dark">
+                            <a href="services.html#developpement" class="btn btn-light marg-top">
                                 Voir le service
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="card card-service marg-top aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card card-service marg-top aos-init aos-animation" data-aos="zoom-in" data-aos-delay="400">
                             <span class="subtitle">
                                 02
                             </span>
@@ -148,13 +156,13 @@
                             <p>
                                 Le web design est l'art de concevoir des expériences visuelles et interactives sur le web.
                             </p>
-                            <a href="services.html#design" class="btn btn-dark">
+                            <a href="services.html#design" class="btn btn-light marg-top">
                                 Voir le service
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="card card-service marg-top aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card card-service marg-top aos-init aos-animation" data-aos="zoom-in" data-aos-delay="400">
                             <span class="subtitle">
                                 03
                             </span>
@@ -162,7 +170,7 @@
                             <p>
                                 La refonte de site web consiste à actualiser, améliorer et optimiser un site internet existant.
                             </p>
-                            <a href="services.html#refonte" class="btn btn-dark">
+                            <a href="services.html#refonte" class="btn btn-light marg-top">
                                 Voir le service
                             </a>
                         </div>
@@ -173,109 +181,61 @@
         <section class="section bg-dark projects-selection">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-12">
-                        <h3 class="aos-init aos-animation" data-aos="zoom-in" data-aos-delay="300">Portfolio</h3>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <a href="portfolio.html" class="btn btn-light btn-max marg-top-tablet aos-init aos-animation" data-aos="zoom-in" data-aos-delay="300">
-                            Tout voir
-                        </a>
-                    </div>
-                    <div class="col-md-12 marg marg-top-mobile">
-                        <div class="card card-selection marg-top aos-init aos-animation" data-aos="zoom-in" data-aos-delay="400">
-                            <a href="kanirgarden.html" class="text-decoration-none" alt="Lien de la page du projet KanirGarden" aria-label="Lien de la page du projet KanirGarden">
-                                <div class="infos-project">
-                                    <div class="infos">
-                                        <div class="services">
-                                            <span class="service subtitle">Développement</span>
-                                            <span class="service service-two subtitle">Refonte</span>
-                                        </div>
-                                        <div class="year">
-                                            <span class="year subtitle">2024</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <img src="assets/img/projects/kanirgarden/kanirgarden.webp" alt="Image de présentation du projet KanirGarden" aria-label="Image de présentation du projet KanirGarden">
-                                <div class="presentation">
-                                    <h3>KanirGarden</h3>
-                                    <p>
-                                        KanirGarden est un spa et centre de bien-être, qui offre une expérience ultime à travers des services de spa haut de gamme. 
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card card-selection marg-top aos-init aos-animation" data-aos="zoom-in" data-aos-delay="400">
-                            <a href="worldwheels.html" class="text-decoration-none" alt="Lien de la page du projet WorldWheels" aria-label="Lien de la page du projet WorldWheels">
-                                <div class="infos-project">
-                                    <div class="infos">
-                                        <div class="services">
-                                            <span class="service subtitle">Développement</span>
-                                            <span class="service service-two subtitle">Design</span>
-                                        </div>
-                                        <div class="year">
-                                            <span class="year subtitle">2024</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <img src="assets/img/projects/worldwheels/transports.webp" alt="Image de présentation du projet WorldWheels" aria-label="Image de présentation du projet WorldWheels">
-                                <div class="presentation">
-                                    <h3>WorldWheels</h3>
-                                    <p>
-                                        WorldWheels est une agence de transport international réputée, dédiée à transformer le secteur du transport mondial. 
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="col-md-12">
+                        <h3 class="text-center aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">Portfolio</h3>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="section bg-light contact" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h3 class="aos-init aos-animation" data-aos="fade-up" data-aos-delay="300">Parlons ensemble</h3>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="list marg">
-                            <ul class="list-one list-unstyled">
-                                <li class="dev aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">    
-                                    <a href="https://mail.google.com/mail/u/0/#inbox" aria-label="E-mail">
-                                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                                        <span class="service-name">E-mail</span>
-                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
-                                    </a>
-                                </li>
-                                <li class="design aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">    
-                                    <a href="https://www.linkedin.com/in/kahinaouali/" aria-label="Linkedin">
-                                        <span class="icon"><i class="fa-brands fa-linkedin-in"></i></span>
-                                        <span class="service-name">LinkedIn</span>
-                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
-                                    </a>
-                                </li>
-                                <li class="aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">    
-                                    <a href="https://github.com/kahinadev" aria-label="Github">
-                                        <span class="icon"><i class="fa-brands fa-github"></i></span>
-                                        <span class="service-name">Github</span>
-                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
-                                    </a>
-                                </li>
-                                <li class="redesign aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">    
-                                    <a href="https://codepen.io/kahinadev" aria-label="Codepen">
-                                        <span class="icon"><i class="fa-brands fa-codepen"></i></span>
-                                        <span class="service-name">Codepen</span>
-                                        <span class="arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
-                                    </a>
-                                </li>
-                            </ul>
+            <div class="projects-card">
+                <div class="card card-selection marg-top aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">
+                    <a href="kanirgarden.html" class="text-decoration-none" alt="Lien de la page du projet KanirGarden" aria-label="Lien de la page du projet KanirGarden">
+                        <div class="infos-project">
+                            <div class="infos">
+                                <div class="services">
+                                    <span class="service subtitle">Développement</span>
+                                    <span class="service service-two subtitle">Refonte</span>
+                                </div>
+                                <div class="year">
+                                    <span class="year subtitle">2024</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <img src="assets/img/projects/kanirgarden/mockup/carte-de-visite-devant.webp" alt="Image des cartes de visites du projet KanirGarden" aria-label="Image des cartes de visites du projet KanirGarden">
+                        <div class="presentation">
+                            <h3>KanirGarden</h3>
+                            <p>
+                                KanirGarden est un spa et centre de bien-être, qui offre une expérience ultime à travers des services de spa haut de gamme. 
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card card-selection aos-init aos-animation" data-aos="fade-up" data-aos-delay="400">
+                    <a href="worldwheels.html" class="text-decoration-none" alt="Lien de la page du projet WorldWheels" aria-label="Lien de la page du projet WorldWheels">
+                        <div class="infos-project">
+                            <div class="infos">
+                                <div class="services">
+                                    <span class="service subtitle">Développement</span>
+                                    <span class="service service-two subtitle">Refonte</span>
+                                </div>
+                                <div class="year">
+                                    <span class="year subtitle">2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="assets/img/projects/worldwheels/mockup/mockup-laptop.webp" alt="Image de présentation du projet WorldWheels" aria-label="Image de présentation du projet WorldWheels">
+                        <div class="presentation">
+                            <h3>WorldWheels</h3>
+                            <p>
+                                WorldWheels est une agence de transport international réputée, dédiée à transformer le secteur du transport mondial. 
+                            </p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer id="footer" class="footer bg-dark shadow-sm" role="complementary" aria-label="Footer du site">
+    <footer id="footer" class="footer bg-dark" role="complementary" aria-label="Footer du site">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12">

@@ -18,7 +18,6 @@
 
         img {
             width: 15%;
-            margin-left: -20px;
 
             @media screen and (max-width: $mobile) {
                 margin-left: -8px;
@@ -29,11 +28,13 @@
     .button-menu {
         color: $color-subtitle;
         margin-top: 0px;
+        margin-right: 25px;
         padding: $zero !important;
         transition: transform 0.5s ease !important;
 
         @media screen and (max-width: $mobile) {
-            right: 0.7rem;
+            right: 0.9rem;
+            margin-right: $zero !important;
             position: $absolute;
         }
 
@@ -85,7 +86,8 @@
     }
 }
 
-.light-header {
+.light-header,
+.green-header {
     .logo-black {
         display: $block !important;
     }
@@ -121,6 +123,12 @@
         .close {
             color: $color-background !important;
         }
+    }
+}
+
+.green-header {
+    .sidenav {
+        background-color: $color-subtitle !important;
     }
 }
 

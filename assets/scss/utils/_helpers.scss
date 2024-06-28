@@ -71,6 +71,9 @@
 }
 
 .bg-green {
+    .subtitle {
+        color: $color-background !important;
+    }
     background-color: $color-subtitle !important;
 }
 

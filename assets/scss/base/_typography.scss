@@ -17,10 +17,6 @@ h1 {
     @media screen and (max-width: $mobile) {
         font-size: 52px !important;
     }
-
-    @media screen and (max-width: $desktop) {
-        font-size: 127px;
-    }
 }
 
 h2 {
@@ -29,20 +25,16 @@ h2 {
     @media screen and (max-width: $mobile) {
         font-size: 51px !important;
     }
-
-    @media screen and (max-width: $desktop) {
-        font-size: 100px;
-    }
 }
 
 h3 {
     font-size: 177px;
 
     @media screen and (max-width: $mobile) {
-        font-size: 50px !important;
+        font-size: 80px !important;
     }
 
-    @media screen and (max-width: $desktop) {
-        font-size: 90px;
+    @media screen and (max-width: $tablet) {
+        font-size: 130px;
     }
 }
