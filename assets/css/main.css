@@ -161,16 +161,16 @@ h1 {
 }
 @media screen and (max-width: 578px) {
   h1 {
-    font-size: 52px !important;
+    font-size: 60px !important;
   }
 }
 
 h2 {
-  font-size: 130px;
+  font-size: 178px;
 }
 @media screen and (max-width: 578px) {
   h2 {
-    font-size: 51px !important;
+    font-size: 55px !important;
   }
 }
 
@@ -179,7 +179,7 @@ h3 {
 }
 @media screen and (max-width: 578px) {
   h3 {
-    font-size: 80px !important;
+    font-size: 52px !important;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -505,17 +505,13 @@ h3 {
 }
 
 .card-service,
-.card-contact,
-.card-language {
+.card-contact {
   border: 1px solid #EBEBEB;
 }
 .card-service:hover, .card-service:focus, .card-service:active,
 .card-contact:hover,
 .card-contact:focus,
-.card-contact:active,
-.card-language:hover,
-.card-language:focus,
-.card-language:active {
+.card-contact:active {
   background-color: #EBEBEB;
 }
 .card-service:hover h4,
@@ -533,32 +529,32 @@ h3 {
 .card-contact:focus p,
 .card-contact:active h4,
 .card-contact:active i,
-.card-contact:active p,
-.card-language:hover h4,
-.card-language:hover i,
-.card-language:hover p,
-.card-language:focus h4,
-.card-language:focus i,
-.card-language:focus p,
-.card-language:active h4,
-.card-language:active i,
-.card-language:active p {
+.card-contact:active p {
   color: #292929;
 }
 .card-service:hover .btn, .card-service:focus .btn, .card-service:active .btn,
 .card-contact:hover .btn,
 .card-contact:focus .btn,
-.card-contact:active .btn,
-.card-language:hover .btn,
-.card-language:focus .btn,
-.card-language:active .btn {
+.card-contact:active .btn {
   color: #292929 !important;
   border: 1px solid #292929 !important;
 }
 .card-service h4,
-.card-contact h4,
-.card-language h4 {
+.card-contact h4 {
   font-size: 25px;
+}
+
+.card-language {
+  border: 1px solid #292929;
+}
+.card-language:hover, .card-language:focus, .card-language:active {
+  background-color: #292929;
+}
+.card-language:hover h4,
+.card-language:hover .icon, .card-language:focus h4,
+.card-language:focus .icon, .card-language:active h4,
+.card-language:active .icon {
+  color: #EBEBEB !important;
 }
 
 .card-language .icon,
@@ -602,7 +598,7 @@ h3 {
 }
 @media screen and (max-width: 578px) {
   .card-selection {
-    margin-bottom: 19px !important;
+    margin-bottom: 20px !important;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -814,6 +810,29 @@ h3 {
   .projects-selection {
     padding-top: 5rem !important;
   }
+}
+
+@media screen and (max-width: 578px) {
+  .about-me h1 {
+    margin-top: 5rem !important;
+  }
+}
+.about-me h1,
+.about-me .second {
+  color: #99b57a;
+}
+@media screen and (max-width: 578px) {
+  .about-me h1,
+.about-me h2 {
+    font-size: 52px !important;
+  }
+}
+
+.image-about {
+  padding: 0rem !important;
+}
+.image-about img {
+  height: 80vh;
 }
 
 @media screen and (max-width: 578px) {

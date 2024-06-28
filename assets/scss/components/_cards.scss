@@ -17,8 +17,7 @@
 }
 
 .card-service,
-.card-contact,
-.card-language {
+.card-contact {
     border: 1px solid $color-background;
 
     &:hover,
@@ -40,6 +39,21 @@
 
     h4 {
         font-size: 25px;
+    }
+}
+
+.card-language {
+    border: 1px solid $color-base;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $color-base;
+
+        h4,
+        .icon {
+            color: $color-background !important;
+        }
     }
 }
 
@@ -86,7 +100,7 @@
     margin-bottom: 10px;
 
     @media screen and (max-width: $mobile) {
-        margin-bottom: 19px !important;
+        margin-bottom: $twenty !important;
     }
 
     @media screen and (max-width: $tablet) {

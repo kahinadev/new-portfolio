@@ -1,3 +1,32 @@
+.about-me {
+
+    h1 {
+        @media screen and (max-width: $mobile) {
+            margin-top: $five-rem !important;
+        }
+    }
+
+    h1,
+    .second {
+        color: $color-subtitle;
+    }
+
+    h1,
+    h2 {
+        @media screen and (max-width: $mobile) {
+            font-size: 52px !important;
+        }
+    }
+}
+
+.image-about {
+    padding: $zero-rem !important;
+
+    img {
+        height: 80vh;
+    }
+}
+
 // .about-me {
 //     h1 {
 //         font-size: 320px;
